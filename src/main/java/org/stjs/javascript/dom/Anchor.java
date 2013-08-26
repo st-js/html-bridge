@@ -17,15 +17,11 @@ package org.stjs.javascript.dom;
 
 abstract public class Anchor extends Element {
 	public String accessKey;
-	public String charset;
-	public String coords;
 	public String href;
+	public String media;
 	public String hreflang;
-	public String name;
 	public String rel;
-	public String rev;
-	public String shape;
-	public int tabIndex;
+
 	public String target;
 	public String type;
 

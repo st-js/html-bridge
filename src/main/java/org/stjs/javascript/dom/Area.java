@@ -20,8 +20,10 @@ abstract public class Area extends Element {
 	public String alt;
 	public String coords;
 	public String href;
-	public boolean noHref;
+	public String hreflang;
+	public String media;
 	public String shape;
-	public int tabIndex;
+	public String rel;
 	public String target;
+	public String type;
 }

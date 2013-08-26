@@ -55,6 +55,7 @@ abstract public class Element extends Node {
 	public int scrollTop;
 	public int scrollWidth;
 	public int width;
+	public int tabIndex;
 
 	// events
 	public Function1<DOMEvent, Boolean> onblur;

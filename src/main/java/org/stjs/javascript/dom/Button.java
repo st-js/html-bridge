@@ -16,11 +16,16 @@
 package org.stjs.javascript.dom;
 
 abstract public class Button extends Element {
+	public boolean autofocus;
+	public String formAction;
+	public String formEnctype;
+	public String formMethod;
+	public boolean formNoValidate;
+	public String formTarget;
 	public String accessKey;
 	public boolean disabled;
 	public Form form;
 	public String name;
-	public int tabIndex;
 	public String type;
 	public String value;
 }

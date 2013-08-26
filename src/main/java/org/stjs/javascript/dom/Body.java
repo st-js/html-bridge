@@ -16,10 +16,5 @@
 package org.stjs.javascript.dom;
 
 abstract public class Body extends Element {
-	public String ALink;
-	public String VLink;
-	public String background;
-	public String bgColor;
-	public String link;
-	public String text;
+
 }

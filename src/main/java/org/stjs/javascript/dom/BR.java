@@ -16,5 +16,5 @@
 package org.stjs.javascript.dom;
 
 abstract public class BR extends Element {
-	public String clear;
+
 }

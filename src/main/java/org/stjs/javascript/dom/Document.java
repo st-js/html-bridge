@@ -21,7 +21,6 @@ abstract public class Document extends Node {
 	public String URL;
 	public String documentURI;
 	public HTMLCollection<Anchor> anchors;
-	public HTMLCollection<Applet> applets;
 	public Element body;
 	public String cookie;
 	public String domain;
