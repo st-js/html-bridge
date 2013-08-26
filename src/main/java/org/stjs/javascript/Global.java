@@ -33,6 +33,10 @@ public class Global {
 
 	public static STJS stjs;
 
+	public static JSON JSON;
+
+	public static LocalStorage localStorage;
+
 	// do not add this one too
 	// public static Window self;
 

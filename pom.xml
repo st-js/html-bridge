@@ -5,7 +5,7 @@
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>html</artifactId>
 	<packaging>jar</packaging>
-	<version>5.0.br0-SNAPSHOT</version>
+	<version>5.0.bv0-SNAPSHOT</version>
 	<name>Strongly-typed Javascript:Bridge to HTML/DOM</name>
 
 	<parent>
