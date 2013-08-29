@@ -16,23 +16,13 @@
 package org.stjs.javascript.dom;
 
 abstract public class Object extends Element {
-	public String align;
-	public String archive;
-	public String border;
 	public String code;
-	public String codeBase;
-	public String codeType;
 	public Document contentDocument;
 	public String data;
-	public boolean declare;
 	public Form form;
 	public String height;
-	public String hspace;
 	public String name;
-	public String standby;
-	public int tabIndex;
 	public String type;
 	public String useMap;
-	public String vspace;
 	public String width;
 }

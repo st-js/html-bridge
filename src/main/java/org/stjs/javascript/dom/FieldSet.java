@@ -17,4 +17,6 @@ package org.stjs.javascript.dom;
 
 abstract public class FieldSet extends Element {
 	public Form form;
+	public boolean disabled;
+	public String name;
 }

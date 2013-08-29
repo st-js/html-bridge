@@ -57,6 +57,14 @@ abstract public class Element extends Node {
 	public int width;
 	public int tabIndex;
 
+	public boolean contentEditable;
+	public boolean contextMenu;
+	public boolean draggable;
+	public boolean dropZone;
+	public boolean hidden;
+	public boolean spellCheck;
+	public boolean translate;
+
 	// events
 	public Function1<DOMEvent, Boolean> onblur;
 	public Function1<DOMEvent, Boolean> onchange;

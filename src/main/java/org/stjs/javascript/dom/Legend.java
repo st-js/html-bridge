@@ -17,6 +17,5 @@ package org.stjs.javascript.dom;
 
 abstract public class Legend extends Element {
 	public String accessKey;
-	public String align;
 	public Form form;
 }

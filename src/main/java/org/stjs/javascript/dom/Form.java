@@ -18,6 +18,8 @@ package org.stjs.javascript.dom;
 abstract public class Form extends Element {
 	public String acceptCharset;
 	public String action;
+	public String autoComplete;
+	public boolean noValidate;
 	public HTMLCollection<Input> elements;
 	public String enctype;
 	public int length;

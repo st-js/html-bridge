@@ -16,12 +16,7 @@
 package org.stjs.javascript.dom;
 
 abstract public class TableRow extends Element {
-	public String VAlign;
-	public String align;
-	public String bgColor;
 	public HTMLCollection<TableCell> cells;
-	public String ch;
-	public String chOff;
 	public int rowIndex;
 	public int sectionRowIndex;
 

@@ -16,13 +16,13 @@
 package org.stjs.javascript.dom;
 
 abstract public class Link extends Element {
-	public String charset;
 	public boolean disabled;
 	public String href;
 	public String hreflang;
 	public String media;
 	public String rel;
-	public String rev;
 	public String target;
 	public String type;
+	public String sizes;
+
 }

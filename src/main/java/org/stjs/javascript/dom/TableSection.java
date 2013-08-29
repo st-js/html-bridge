@@ -16,10 +16,7 @@
 package org.stjs.javascript.dom;
 
 abstract public class TableSection extends Element {
-	public String VAlign;
-	public String align;
-	public String ch;
-	public String chOff;
+
 	public HTMLCollection<TableRow> rows;
 
 	public void deleteRow(int arg0) {

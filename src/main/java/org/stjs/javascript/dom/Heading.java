@@ -16,5 +16,5 @@
 package org.stjs.javascript.dom;
 
 abstract public class Heading extends Element {
-	public String align;
+
 }

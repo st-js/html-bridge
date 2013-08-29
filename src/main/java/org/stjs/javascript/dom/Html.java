@@ -17,4 +17,5 @@ package org.stjs.javascript.dom;
 
 abstract public class Html extends Element {
 	public String version;
+	public String manifest;
 }

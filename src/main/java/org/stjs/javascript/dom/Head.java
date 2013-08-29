@@ -16,5 +16,4 @@
 package org.stjs.javascript.dom;
 
 abstract public class Head extends Element {
-	public String profile;
 }

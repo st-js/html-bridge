@@ -20,4 +20,5 @@ abstract public class Meta extends Element {
 	public String httpEquiv;
 	public String name;
 	public String scheme;
+	public String charset;
 }

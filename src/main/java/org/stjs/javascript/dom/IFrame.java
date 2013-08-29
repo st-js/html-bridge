@@ -16,15 +16,12 @@
 package org.stjs.javascript.dom;
 
 abstract public class IFrame extends Element {
-	public String align;
 	public Document contentDocument;
-	public String frameBorder;
 	public String height;
-	public String longDesc;
-	public String marginHeight;
-	public String marginWidth;
 	public String name;
-	public String scrolling;
+	public String sandbox;
+	public String seamless;
 	public String src;
+	public String srcdoc;
 	public String width;
 }

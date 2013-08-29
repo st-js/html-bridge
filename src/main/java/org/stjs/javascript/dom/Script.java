@@ -23,4 +23,5 @@ abstract public class Script extends Element {
 	public String src;
 	public String text;
 	public String type;
+	public boolean async;
 }

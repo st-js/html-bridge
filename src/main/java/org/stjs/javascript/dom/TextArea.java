@@ -16,6 +16,7 @@
 package org.stjs.javascript.dom;
 
 abstract public class TextArea extends Element {
+	public boolean autofocus;
 	public String accessKey;
 	public int cols;
 	public String defaultValue;
@@ -24,9 +25,12 @@ abstract public class TextArea extends Element {
 	public String name;
 	public boolean readOnly;
 	public int rows;
-	public int tabIndex;
 	public String type;
 	public String value;
+	public int maxLength;
+	public String placeholder;
+	public boolean required;
+	public String wrap;
 
 	public void blur() {
 		throw new UnsupportedOperationException();

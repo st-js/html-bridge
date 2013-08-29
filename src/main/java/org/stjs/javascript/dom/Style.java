@@ -19,4 +19,5 @@ abstract public class Style extends Element {
 	public boolean disabled;
 	public String media;
 	public String type;
+	public boolean scoped;
 }

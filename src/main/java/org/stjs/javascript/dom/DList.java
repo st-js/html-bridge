@@ -16,5 +16,5 @@
 package org.stjs.javascript.dom;
 
 abstract public class DList extends Element {
-	public boolean compact;
+
 }

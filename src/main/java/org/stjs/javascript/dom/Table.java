@@ -19,17 +19,9 @@ abstract public class Table extends Element {
 	public HTMLCollection<TableSection> TBodies;
 	public TableSection TFoot;
 	public TableSection THead;
-	public String align;
-	public String bgColor;
 	public String border;
 	public TableCaption caption;
-	public String cellPadding;
-	public String cellSpacing;
-	public String frame;
 	public HTMLCollection<TableRow> rows;
-	public String rules;
-	public String summary;
-	public String width;
 
 	public Element createCaption() {
 		throw new UnsupportedOperationException();

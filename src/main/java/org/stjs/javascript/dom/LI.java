@@ -16,6 +16,5 @@
 package org.stjs.javascript.dom;
 
 abstract public class LI extends Element {
-	public String type;
 	public int value;
 }

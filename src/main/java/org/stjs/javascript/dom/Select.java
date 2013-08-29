@@ -16,6 +16,8 @@
 package org.stjs.javascript.dom;
 
 abstract public class Select extends Element {
+	public boolean autofocus;
+	public boolean required;
 	public boolean disabled;
 	public Form form;
 	public int length;
@@ -24,7 +26,6 @@ abstract public class Select extends Element {
 	public HTMLCollection<Option> options;
 	public int selectedIndex;
 	public int size;
-	public int tabIndex;
 	public String type;
 	public String value;
 
