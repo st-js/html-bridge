@@ -81,4 +81,9 @@ abstract public class Window {
 	abstract public void scrollBy(int x, int y);
 
 	abstract public void scrollTo(int x, int y);
+
+	abstract public String atob(String text);
+
+	abstract public String btoa(String text);
+
 }

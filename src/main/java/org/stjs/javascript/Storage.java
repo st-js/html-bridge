@@ -1,6 +1,6 @@
 package org.stjs.javascript;
 
-public class LocalStorage {
+abstract public class Storage implements Map<String, Object> {
 	public <T> T getItem(String key) {
 		throw new UnsupportedOperationException();
 	}

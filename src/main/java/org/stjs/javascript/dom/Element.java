@@ -82,6 +82,47 @@ abstract public class Element extends Node {
 	public Function1<DOMEvent, Boolean> onmouseup;
 	public Function1<DOMEvent, Boolean> onselect;
 
+	public Function1<DOMEvent, Boolean> oncontextmenu;
+	public Function1<DOMEvent, Boolean> onformchange;
+	public Function1<DOMEvent, Boolean> onforminput;
+	public Function1<DOMEvent, Boolean> oninput;
+	public Function1<DOMEvent, Boolean> oninvalid;
+
+	// drag & drop
+	public Function1<DOMEvent, Boolean> ondrag;
+	public Function1<DOMEvent, Boolean> ondragend;
+	public Function1<DOMEvent, Boolean> ondragenter;
+	public Function1<DOMEvent, Boolean> ondragleave;
+	public Function1<DOMEvent, Boolean> ondragover;
+	public Function1<DOMEvent, Boolean> ondragstart;
+	public Function1<DOMEvent, Boolean> ondrop;
+	// new mouse
+	public Function1<DOMEvent, Boolean> onmousewheel;
+	public Function1<DOMEvent, Boolean> onscroll;
+
+	// media
+	public Function1<DOMEvent, Boolean> oncanplay;
+	public Function1<DOMEvent, Boolean> oncanplaythrough;
+	public Function1<DOMEvent, Boolean> ondurationchange;
+	public Function1<DOMEvent, Boolean> onemptied;
+	public Function1<DOMEvent, Boolean> onended;
+	public Function1<DOMEvent, Boolean> onloadeddata;
+	public Function1<DOMEvent, Boolean> onloadedmetadata;
+	public Function1<DOMEvent, Boolean> onloadstart;
+	public Function1<DOMEvent, Boolean> onpause;
+	public Function1<DOMEvent, Boolean> onplay;
+	public Function1<DOMEvent, Boolean> onplaying;
+	public Function1<DOMEvent, Boolean> onprogress;
+	public Function1<DOMEvent, Boolean> onratechange;
+	public Function1<DOMEvent, Boolean> onreadystatechange;
+	public Function1<DOMEvent, Boolean> onseeked;
+	public Function1<DOMEvent, Boolean> onseeking;
+	public Function1<DOMEvent, Boolean> onstalled;
+	public Function1<DOMEvent, Boolean> onsuspend;
+	public Function1<DOMEvent, Boolean> ontimeupdate;
+	public Function1<DOMEvent, Boolean> onvolumechange;
+	public Function1<DOMEvent, Boolean> onwaiting;
+
 	public String getAttribute(String name) {
 		throw new UnsupportedOperationException();
 	}

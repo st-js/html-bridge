@@ -35,7 +35,8 @@ public class Global {
 
 	public static JSON JSON;
 
-	public static LocalStorage localStorage;
+	public static Storage localStorage;
+	public static Storage sessionStorage;
 
 	// do not add this one too
 	// public static Window self;

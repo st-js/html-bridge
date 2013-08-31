@@ -15,6 +15,22 @@
  */
 package org.stjs.javascript.dom;
 
-abstract public class Body extends Element {
+import org.stjs.javascript.functions.Function1;
 
+abstract public class Body extends Element {
+	public Function1<DOMEvent, Boolean> onbeforeunload;
+	public Function1<DOMEvent, Boolean> onerror;
+	public Function1<DOMEvent, Boolean> onhaschange;
+	public Function1<DOMEvent, Boolean> onload;
+	public Function1<DOMEvent, Boolean> onmessage;
+	public Function1<DOMEvent, Boolean> onoffline;
+	public Function1<DOMEvent, Boolean> ononline;
+	public Function1<DOMEvent, Boolean> onpagehide;
+	public Function1<DOMEvent, Boolean> onpageshow;
+	public Function1<DOMEvent, Boolean> onpopstate;
+	public Function1<DOMEvent, Boolean> onredo;
+	public Function1<DOMEvent, Boolean> onresize;
+	public Function1<DOMEvent, Boolean> onstorage;
+	public Function1<DOMEvent, Boolean> onundo;
+	public Function1<DOMEvent, Boolean> onunload;
 }

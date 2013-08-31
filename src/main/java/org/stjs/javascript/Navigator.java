@@ -15,6 +15,8 @@
  */
 package org.stjs.javascript;
 
+import org.stjs.javascript.dom.geo.Geolocation;
+
 abstract public class Navigator {
 	public String appCodeName;
 	public String appName;
@@ -22,6 +24,7 @@ abstract public class Navigator {
 	public boolean cookieEnabled;
 	public String platform;
 	public String userAgent;
+	public Geolocation geolocation;
 
 	abstract public boolean javaEnabled();
 

@@ -29,4 +29,6 @@ public class DOMEvent {
 
 	public long timeStamp;
 	public String type;
+
+	public DataTransfer dataTransfer;
 }
