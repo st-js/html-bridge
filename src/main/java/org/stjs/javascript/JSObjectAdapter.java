@@ -27,42 +27,26 @@ import org.stjs.javascript.annotation.Template;
 @Adapter
 public class JSObjectAdapter {
 	@Template("get")
-	public static Object $get(Object obj, String property) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Object $get  (Object obj, String property);
 
 	@Template("put")
-	public static void $put(Object obj, String property, Object value) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void $put  (Object obj, String property, Object value);
 
 	@Template("adapter")
-	public static boolean hasOwnProperty(Object obj, String property) {
-		throw new UnsupportedOperationException();
-	}
+	public native static boolean hasOwnProperty  (Object obj, String property);
 
 	@Template("toProperty")
-	public static Map<String, Object> $prototype(Object obj) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Map<String, Object> $prototype  (Object obj);
 
 	@Template("toProperty")
-	public static Object $constructor(Object obj) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Object $constructor  (Object obj);
 
 	@Template("properties")
-	public static Map<String, Object> $properties(Object obj) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Map<String, Object> $properties  (Object obj);
 
 	@Template("properties")
-	public static <T> T $object(Map<String, Object> properties) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> T $object  (Map<String, Object> properties);
 
 	@Template("js")
-	public static <T> T $js(String code) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> T $js  (String code);
 }

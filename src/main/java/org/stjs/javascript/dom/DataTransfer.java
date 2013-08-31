@@ -8,15 +8,9 @@ abstract public class DataTransfer {
 	public HTMLList<File> files;
 	public Array<String> types;
 
-	public void clearData(String type) {
-		throw new UnsupportedOperationException();
-	}
+	public native void clearData  (String type);
 
-	public String getData(String type) {
-		throw new UnsupportedOperationException();
-	}
+	public native String getData  (String type);
 
-	public void setData(String type, String data) {
-		throw new UnsupportedOperationException();
-	}
+	public native void setData  (String type, String data);
 }

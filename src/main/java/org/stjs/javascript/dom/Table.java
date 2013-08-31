@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -23,35 +23,19 @@ abstract public class Table extends Element {
 	public TableCaption caption;
 	public HTMLCollection<TableRow> rows;
 
-	public Element createCaption() {
-		throw new UnsupportedOperationException();
-	}
+	public native Element createCaption  ();
 
-	public Element createTFoot() {
-		throw new UnsupportedOperationException();
-	}
+	public native Element createTFoot  ();
 
-	public Element createTHead() {
-		throw new UnsupportedOperationException();
-	}
+	public native Element createTHead  ();
 
-	public void deleteCaption() {
-		throw new UnsupportedOperationException();
-	}
+	public native void deleteCaption  ();
 
-	public void deleteRow(int arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native void deleteRow  (int arg0);
 
-	public void deleteTFoot() {
-		throw new UnsupportedOperationException();
-	}
+	public native void deleteTFoot  ();
 
-	public void deleteTHead() {
-		throw new UnsupportedOperationException();
-	}
+	public native void deleteTHead  ();
 
-	public Element insertRow(int arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native Element insertRow  (int arg0);
 }

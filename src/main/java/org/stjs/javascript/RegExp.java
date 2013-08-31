@@ -22,27 +22,18 @@ public class RegExp {
 	public boolean multiline;
 	public String source;
 
-	public RegExp(String pattern) {
-		throw new UnsupportedOperationException();
+	public RegExp(String pattern) {//
 	}
 
 	public RegExp(String pattern, String modifiers) {
-		throw new UnsupportedOperationException();
+		//
 	}
 
-	public void compile(String pattern, String modifiers) {
-		throw new UnsupportedOperationException();
-	}
+	public native void compile(String pattern, String modifiers);
 
-	public void compile(String pattern) {
-		throw new UnsupportedOperationException();
-	}
+	public native void compile(String pattern);
 
-	public RegExpMatch exec(String source) {
-		throw new UnsupportedOperationException();
-	}
+	public native RegExpMatch exec(String source);
 
-	public boolean test(String source) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean test(String source);
 }

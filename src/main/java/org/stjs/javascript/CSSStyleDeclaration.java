@@ -21,30 +21,30 @@ public abstract class CSSStyleDeclaration {
 	 * @param propertyName
 	 * @return the optional priority, "important".
 	 */
-	public abstract String getPropertyPriority(String propertyName);
+	public native String getPropertyPriority (String propertyName);
 
 	/**
 	 * @param propertyName
 	 * @return the property value
 	 */
-	public abstract String getPropertyValue(String propertyName);
+	public native String getPropertyValue (String propertyName);
 
 	/**
 	 * @param item
 	 * @return the property name
 	 */
-	public abstract String index(Integer item);
+	public native String index (Integer item);
 
 	/**
 	 * @param propertyName
 	 * @return the value deleted
 	 */
-	public abstract String removeProperty(String propertyName);
+	public native String removeProperty (String propertyName);
 
 	/**
 	 * @param propertyName
 	 * @param value
 	 * @param priority (important or null)
 	 */
-	public abstract void setProperty(String propertyName, String value, String priority);
+	public native void setProperty (String propertyName, String value, String priority);
 }

@@ -18,7 +18,7 @@ package org.stjs.javascript;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.functions.Callback0;
 
-abstract public class XMLHttpRequest {
+public class XMLHttpRequest {
 	public Callback0 onreadystatechange;
 	public int readyState;
 	public String responseText;
@@ -27,21 +27,21 @@ abstract public class XMLHttpRequest {
 	public int status;
 	public String statusText;
 
-	abstract public void abort();
+	public native void abort();
 
-	abstract public String getAllResponseHeaders();
+	public native String getAllResponseHeaders();
 
-	abstract public String getResponseHeader(String name);
+	public native String getResponseHeader(String name);
 
-	abstract public void open(String method, String url);
+	public native void open(String method, String url);
 
-	abstract public void open(String method, String url, boolean async, String uname, String pswd);
+	public native void open(String method, String url, boolean async, String uname, String pswd);
 
-	abstract public void open(String method, String url, boolean async);
+	public native void open(String method, String url, boolean async);
 
-	abstract public void send();
+	public native void send();
 
-	abstract public void send(String data);
+	public native void send(String data);
 
-	abstract public void setRequestHeader(String name, Object value);
+	public native void setRequestHeader(String name, Object value);
 }

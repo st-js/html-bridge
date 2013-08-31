@@ -10,11 +10,7 @@ public final class Worker<T> {
 		//
 	}
 
-	public void postMessage(T message) {
-		throw new UnsupportedOperationException();
-	}
+	public native void postMessage  (T message);
 
-	public void terminate() {
-		throw new UnsupportedOperationException();
-	}
+	public native void terminate  ();
 }

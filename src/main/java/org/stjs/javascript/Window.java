@@ -21,7 +21,7 @@ import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Function1;
 import org.w3c.dom.events.Event;
 
-abstract public class Window {
+public class Window {
 	public boolean closed;
 	public String defaultStatus;
 	public Document document;
@@ -54,36 +54,36 @@ abstract public class Window {
 	public Callback1<DOMEvent> onunload;
 	public Callback1<DOMEvent> onresize;
 
-	abstract public void blur();
+	public native void blur();
 
-	abstract public void close();
+	public native void close();
 
-	abstract public Window createPopup();
+	public native Window createPopup();
 
-	abstract public void focus();
+	public native void focus();
 
-	abstract public void moveBy(int x, int y);
+	public native void moveBy(int x, int y);
 
-	abstract public void moveTo(int x, int y);
+	public native void moveTo(int x, int y);
 
-	abstract public Window open(String url);
+	public native Window open(String url);
 
-	abstract public Window open(String url, String target);
+	public native Window open(String url, String target);
 
-	abstract public Window open(String url, String target, String specs, boolean replace);
+	public native Window open(String url, String target, String specs, boolean replace);
 
-	abstract public void print();
+	public native void print();
 
-	abstract public void resizeBy(int w, int h);
+	public native void resizeBy(int w, int h);
 
-	abstract public void resizeTo(int w, int h);
+	public native void resizeTo(int w, int h);
 
-	abstract public void scrollBy(int x, int y);
+	public native void scrollBy(int x, int y);
 
-	abstract public void scrollTo(int x, int y);
+	public native void scrollTo(int x, int y);
 
-	abstract public String atob(String text);
+	public native String atob(String text);
 
-	abstract public String btoa(String text);
+	public native String btoa(String text);
 
 }

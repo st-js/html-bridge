@@ -18,11 +18,11 @@ package org.stjs.javascript;
 abstract public class History {
 	public int length;
 
-	abstract public void back();
+	public native void back();
 
-	abstract public void forward();
+	public native void forward();
 
-	abstract public void go(int positions);
+	public native void go(int positions);
 
-	abstract public void go(String url);
+	public native void go(String url);
 }

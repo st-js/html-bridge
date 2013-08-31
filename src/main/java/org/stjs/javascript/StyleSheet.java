@@ -42,7 +42,7 @@ public abstract class StyleSheet {
 	 * @param selector
 	 * @param rule
 	 */
-	public abstract void addRule(String selector, String rule);
+	public native void addRule (String selector, String rule);
 
 	/**
 	 * Works in IE and Webkit browsers
@@ -50,24 +50,24 @@ public abstract class StyleSheet {
 	 * @param rule
 	 * @param where
 	 */
-	public abstract void addRule(String selector, String rule, Integer where);
+	public native void addRule (String selector, String rule, Integer where);
 
 	/**
 	 * The complete rule goes into the first parameter Works in all Browsers but not IE below v9
 	 * @param rule
 	 * @param where
 	 */
-	public abstract void insertRule(String rule, Integer where);
+	public native void insertRule (String rule, Integer where);
 
 	/**
 	 * Works in all Browsers but not IE below v9
 	 * @param rule_number
 	 */
-	public abstract void deleteRule(Integer rule_number);
+	public native void deleteRule (Integer rule_number);
 
 	/**
 	 * Works in IE and Webkit browsers
 	 * @param rule_number
 	 */
-	public abstract void removeRule(Integer rule_number);
+	public native void removeRule (Integer rule_number);
 }

@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -25,8 +25,8 @@ public class Option extends Element {
 	public String text;
 	public String value;
 
-	public Option(String text, String value) {
-		throw new UnsupportedOperationException();
+	public Option(String text, String value) {//
+
 	}
 
 }

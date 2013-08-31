@@ -6,7 +6,5 @@ abstract public class Canvas extends Element {
 	public int height;
 	public int width;
 
-	public CanvasRenderingContext2D getContext(String type) {
-		throw new UnsupportedOperationException();
-	}
+	public native CanvasRenderingContext2D getContext  (String type);
 }

@@ -5,11 +5,7 @@ public final class JSON {
 		// forbid the creation using this type
 	}
 
-	public Object parse(String text) {
-		throw new UnsupportedOperationException();
-	}
+	public native Object parse  (String text);
 
-	public String stringify(Object obj) {
-		throw new UnsupportedOperationException();
-	}
+	public native String stringify  (Object obj);
 }

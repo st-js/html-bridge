@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -27,11 +27,7 @@ abstract public class Form extends Element {
 	public String name;
 	public String target;
 
-	public void reset() {
-		throw new UnsupportedOperationException();
-	}
+	public native void reset  ();
 
-	public void submit() {
-		throw new UnsupportedOperationException();
-	}
+	public native void submit  ();
 }

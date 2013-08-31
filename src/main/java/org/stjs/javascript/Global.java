@@ -41,42 +41,24 @@ public class Global {
 	// do not add this one too
 	// public static Window self;
 
-	public static <T> T eval(String expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> T eval  (String expr);
 
-	public static void alert(Object expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void alert  (Object expr);
 
-	public static boolean confirm(String expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native static boolean confirm  (String expr);
 
-	public static String prompt(String expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String prompt  (String expr);
 
-	public static String prompt(String expr, String defaultText) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String prompt  (String expr, String defaultText);
 
-	public static double parseFloat(Object expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native static double parseFloat  (Object expr);
 
-	public static int parseInt(Object expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native static int parseInt  (Object expr);
 
-	public static int parseInt(Object expr, int radix) {
-		throw new UnsupportedOperationException();
-	}
+	public native static int parseInt  (Object expr, int radix);
 
 	@Template("typeOf")
-	public static String typeof(Object obj) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String typeof  (Object obj);
 
 	/**
 	 * this is the equivalent of x || y || z in javascript
@@ -84,65 +66,35 @@ public class Global {
 	 * @return
 	 */
 	@Template("or")
-	public static <T> T $or(T value, T... otherValues) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> T $or  (T value, T... otherValues);
 
-	public static TimeoutHandler setTimeout(String expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setTimeout  (String expr, int timeoutMillis);
 
-	public static TimeoutHandler setTimeout(Callback0 expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setTimeout  (Callback0 expr, int timeoutMillis);
 
-	public static TimeoutHandler setInterval(String expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setInterval  (String expr, int timeoutMillis);
 
-	public static TimeoutHandler setInterval(Callback0 expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setInterval  (Callback0 expr, int timeoutMillis);
 
-	public static void clearTimeout(TimeoutHandler handler) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void clearTimeout  (TimeoutHandler handler);
 
-	public static void clearInterval(TimeoutHandler handler) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void clearInterval  (TimeoutHandler handler);
 
-	public static String decodeURI(String uri) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String decodeURI  (String uri);
 
-	public static String decodeURIComponent(String uri) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String decodeURIComponent  (String uri);
 
-	public static String encodeURI(String uri) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String encodeURI  (String uri);
 
-	public static String encodeURIComponent(String uri) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String encodeURIComponent  (String uri);
 
-	public static String escape(String uri) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String escape  (String uri);
 
-	public static boolean isFinite(Object value) {
-		throw new UnsupportedOperationException();
-	}
+	public native static boolean isFinite  (Object value);
 
-	public static boolean isNaN(Object value) {
-		throw new UnsupportedOperationException();
-	}
+	public native static boolean isNaN  (Object value);
 
-	public static String unescape(String uri) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String unescape  (String uri);
 
 	/**
 	 * defined in stjs.js
@@ -150,9 +102,7 @@ public class Global {
 	 * @param exception
 	 * @return
 	 */
-	public static RuntimeException exception(Object exception) {
-		throw new UnsupportedOperationException();
-	}
+	public native static RuntimeException exception  (Object exception);
 
 	/**
 	 * defined in stjs.js
@@ -160,8 +110,6 @@ public class Global {
 	 * @param obj
 	 * @return
 	 */
-	public static boolean isEnum(Object obj) {
-		throw new UnsupportedOperationException();
-	}
+	public native static boolean isEnum  (Object obj);
 
 }

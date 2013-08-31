@@ -25,9 +25,9 @@ abstract public class Location {
 	public String protocol;
 	public String search;
 
-	abstract public void assign(String url);
+	public native void assign(String url);
 
-	abstract public void reload();
+	public native void reload();
 
-	abstract public void replace(String url);
+	public native void replace(String url);
 }

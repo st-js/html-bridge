@@ -28,102 +28,62 @@ import org.stjs.javascript.functions.Function1;
 @Adapter
 public class JSStringAdapter {
 	@Template("adapter")
-	public static String anchor(String applyTo, String anchor) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String anchor  (String applyTo, String anchor);
 
 	@Template("adapter")
-	public static String big(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String big  (String applyTo);
 
 	@Template("adapter")
-	public static String blink(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String blink  (String applyTo);
 
 	@Template("adapter")
-	public static String bold(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String bold  (String applyTo);
 
 	@Template("adapter")
-	public static String fixed(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String fixed  (String applyTo);
 
 	@Template("adapter")
-	public static String fontcolor(String applyTo, String color) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String fontcolor  (String applyTo, String color);
 
 	@Template("adapter")
-	public static String fontsize(String applyTo, int size) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String fontsize  (String applyTo, int size);
 
 	@Template("adapter")
-	public static String italics(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String italics  (String applyTo);
 
 	@Template("adapter")
-	public static String link(String applyTo, String url) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String link  (String applyTo, String url);
 
 	@Template("adapter")
-	public static String small(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String small  (String applyTo);
 
 	@Template("adapter")
-	public static String strike(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String strike  (String applyTo);
 
 	@Template("adapter")
-	public static String sub(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String sub  (String applyTo);
 
 	@Template("adapter")
-	public static String sup(String applyTo) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String sup  (String applyTo);
 
 	@Template("adapter")
-	public static Array<String> match(String applyTo, RegExp re) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Array<String> match  (String applyTo, RegExp re);
 
 	@Template("adapter")
-	public static Array<String> split(String applyTo, String re) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Array<String> split  (String applyTo, String re);
 
 	@Template("adapter")
-	public static Array<String> split(String applyTo, String re, int limit) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Array<String> split  (String applyTo, String re, int limit);
 
 	@Template("adapter")
-	public static String replace(String applyTo, RegExp re, String repl) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String replace  (String applyTo, RegExp re, String repl);
 
 	@Template("adapter")
-	public static String replace(String applyTo, RegExp re, Function1<String, String> replaceFunction) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String replace  (String applyTo, RegExp re, Function1<String, String> replaceFunction);
 
 	@Template("adapter")
-	public static int charCodeAt(String applyTo, int x) {
-		throw new UnsupportedOperationException();
-	}
+	public native static int charCodeAt  (String applyTo, int x);
 
 	@Template("adapter")
-	public static String fromCharCode(Class<? extends String> applyTo, int... codes) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String fromCharCode  (Class<? extends String> applyTo, int... codes);
 }

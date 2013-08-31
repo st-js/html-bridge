@@ -27,23 +27,15 @@ import org.stjs.javascript.annotation.Template;
 @Adapter
 public class JSNumberAdapter {
 	@Template("adapter")
-	public static String toFixed(Number n, int positions) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String toFixed  (Number n, int positions);
 
 	@Template("adapter")
-	public static String toFixed(String n, int positions) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String toFixed  (String n, int positions);
 
 	@Template("adapter")
-	public static String toExponential(Number n, int positions) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String toExponential  (Number n, int positions);
 
 	@Template("adapter")
-	public static String toPrecision(Number n, int positions) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String toPrecision  (Number n, int positions);
 
 }

@@ -26,7 +26,7 @@ abstract public class Navigator {
 	public String userAgent;
 	public Geolocation geolocation;
 
-	abstract public boolean javaEnabled();
+	public native boolean javaEnabled();
 
-	abstract public boolean taintEnabled();
+	public native boolean taintEnabled();
 }

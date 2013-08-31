@@ -12,41 +12,23 @@ public class WorkerGlobalScope {
 		//
 	}
 
-	public static String atob(String text) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String atob  (String text);
 
-	public static String btoa(String text) {
-		throw new UnsupportedOperationException();
-	}
+	public native static String btoa  (String text);
 
-	public static TimeoutHandler setTimeout(String expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setTimeout  (String expr, int timeoutMillis);
 
-	public static TimeoutHandler setTimeout(Callback0 expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setTimeout  (Callback0 expr, int timeoutMillis);
 
-	public static TimeoutHandler setInterval(String expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setInterval  (String expr, int timeoutMillis);
 
-	public static TimeoutHandler setInterval(Callback0 expr, int timeoutMillis) {
-		throw new UnsupportedOperationException();
-	}
+	public native static TimeoutHandler setInterval  (Callback0 expr, int timeoutMillis);
 
-	public static void clearTimeout(TimeoutHandler handler) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void clearTimeout  (TimeoutHandler handler);
 
-	public static void importScripts(String... scripts) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void importScripts  (String... scripts);
 
-	public static void close() {
-		throw new UnsupportedOperationException();
-	}
+	public native static void close  ();
 
 	public static WorkerGlobalScope self;
 }

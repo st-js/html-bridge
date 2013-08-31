@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -51,19 +51,11 @@ abstract public class Input extends Element {
 	public String useMap;
 	public String value;
 
-	public void blur() {
-		throw new UnsupportedOperationException();
-	}
+	public native void blur  ();
 
-	public void focus() {
-		throw new UnsupportedOperationException();
-	}
+	public native void focus  ();
 
-	public void select() {
-		throw new UnsupportedOperationException();
-	}
+	public native void select  ();
 
-	public void click() {
-		throw new UnsupportedOperationException();
-	}
+	public native void click  ();
 }

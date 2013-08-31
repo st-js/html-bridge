@@ -43,168 +43,86 @@ public final class CanvasRenderingContext2D {
 
 	public String textBaseline;
 
-	public void arc(int x, int y, double radius, double startAngle, double endAngle, boolean anticlockwise) {
-		throw new UnsupportedOperationException();
-	}
+	public native void arc(int x, int y, double radius, double startAngle, double endAngle, boolean anticlockwise);
 
-	public void arcTo(int x1, int y1, int x2, int y2, double radius) {
-		throw new UnsupportedOperationException();
-	}
+	public native void arcTo(int x1, int y1, int x2, int y2, double radius);
 
-	public void beginPath() {
-		throw new UnsupportedOperationException();
-	}
+	public native void beginPath();
 
-	public void bezierCurveTo(int cp1x, int cp1y, int cp2x, int cp2y, int x, int y) {
-		throw new UnsupportedOperationException();
-	}
+	public native void bezierCurveTo(int cp1x, int cp1y, int cp2x, int cp2y, int x, int y);
 
-	public void clearRect(int x, int y, int w, int h) {
-		throw new UnsupportedOperationException();
-	}
+	public native void clearRect(int x, int y, int w, int h);
 
-	public void clip() {
-		throw new UnsupportedOperationException();
-	}
+	public native void clip();
 
-	public void clip(String fillRule) {
-		throw new UnsupportedOperationException();
-	}
+	public native void clip(String fillRule);
 
-	public void closePath() {
-		throw new UnsupportedOperationException();
-	}
+	public native void closePath();
 
-	public CanvasImageData createImageData(int width, int height) {
-		throw new UnsupportedOperationException();
-	}
+	public native CanvasImageData createImageData(int width, int height);
 
-	public CanvasGradient createLinearGradient(int x0, int y0, int x1, int y1) {
-		throw new UnsupportedOperationException();
-	}
+	public native CanvasGradient createLinearGradient(int x0, int y0, int x1, int y1);
 
-	public CanvasPattern createPattern(Object image, String repetition) {
-		throw new UnsupportedOperationException();
-	}
+	public native CanvasPattern createPattern(Object image, String repetition);
 
-	public CanvasGradient createRadialGradient(int x0, int y0, double r0, int x1, int y1, double r1) {
-		throw new UnsupportedOperationException();
-	}
+	public native CanvasGradient createRadialGradient(int x0, int y0, double r0, int x1, int y1, double r1);
 
-	public void drawImage(Object image, int dx, int dy) {
-		throw new UnsupportedOperationException();
-	}
+	public native void drawImage(Object image, int dx, int dy);
 
-	public void drawImage(Object image, int sx, int sy, int dx, int dy) {
-		throw new UnsupportedOperationException();
-	}
+	public native void drawImage(Object image, int sx, int sy, int dx, int dy);
 
-	public void drawImage(Object image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh) {
-		throw new UnsupportedOperationException();
-	}
+	public native void drawImage(Object image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh);
 
-	public void fill() {
-		throw new UnsupportedOperationException();
-	}
+	public native void fill();
 
-	public void fill(String fillRule) {
-		throw new UnsupportedOperationException();
-	}
+	public native void fill(String fillRule);
 
-	public void fillRect(int x, int y, int w, int h) {
-		throw new UnsupportedOperationException();
-	}
+	public native void fillRect(int x, int y, int w, int h);
 
-	public void fillText(String text, int x, int y, int maxWidth) {
-		throw new UnsupportedOperationException();
-	}
+	public native void fillText(String text, int x, int y, int maxWidth);
 
-	public CanvasImageData getImageData(int sx, int sy, int sw, int sh) {
-		throw new UnsupportedOperationException();
-	}
+	public native CanvasImageData getImageData(int sx, int sy, int sw, int sh);
 
-	public void getLineDash(Array<Integer> dashList) {
-		throw new UnsupportedOperationException();
-	}
+	public native void getLineDash(Array<Integer> dashList);
 
-	public boolean isPointInPath(int x, int y, String fillRule) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isPointInPath(int x, int y, String fillRule);
 
-	public boolean isPointInPath(int x, int y) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isPointInPath(int x, int y);
 
-	public void lineTo(int x, int y) {
-		throw new UnsupportedOperationException();
-	}
+	public native void lineTo(int x, int y);
 
-	public CanvasTextMetrics measureText(String text) {
-		throw new UnsupportedOperationException();
-	}
+	public native CanvasTextMetrics measureText(String text);
 
-	public void moveTo(int x, int y) {
-		throw new UnsupportedOperationException();
-	}
+	public native void moveTo(int x, int y);
 
-	public void putImageData(CanvasImageData imagedata, int dx, int dy, int dirtyX, int dirtyY, int dirtyWidth,
-			int dirtyHeight) {
-		throw new UnsupportedOperationException();
-	}
+	public native void putImageData(CanvasImageData imagedata, int dx, int dy, int dirtyX, int dirtyY, int dirtyWidth,
+			int dirtyHeight);
 
-	public void putImageData(CanvasImageData imagedata, int dx, int dy) {
-		throw new UnsupportedOperationException();
-	}
+	public native void putImageData(CanvasImageData imagedata, int dx, int dy);
 
-	public void quadraticCurveTo(int cp1x, int cp1y, int x, int y) {
-		throw new UnsupportedOperationException();
-	}
+	public native void quadraticCurveTo(int cp1x, int cp1y, int x, int y);
 
-	public void rect(int x, int y, int w, int h) {
-		throw new UnsupportedOperationException();
-	}
+	public native void rect(int x, int y, int w, int h);
 
-	public void restore() {
-		throw new UnsupportedOperationException();
-	}
+	public native void restore();
 
-	public void rotate(double angle) {
-		throw new UnsupportedOperationException();
-	}
+	public native void rotate(double angle);
 
-	public void save() {
-		throw new UnsupportedOperationException();
-	}
+	public native void save();
 
-	public void scale(double x, double y) {
-		throw new UnsupportedOperationException();
-	}
+	public native void scale(double x, double y);
 
-	public void setLineDash(Array<Integer> dashList) {
-		throw new UnsupportedOperationException();
-	}
+	public native void setLineDash(Array<Integer> dashList);
 
-	public void setTransform(double m11, double m12, double m21, double m22, double dx, double dy) {
-		throw new UnsupportedOperationException();
-	}
+	public native void setTransform(double m11, double m12, double m21, double m22, double dx, double dy);
 
-	public void stroke() {
-		throw new UnsupportedOperationException();
-	}
+	public native void stroke();
 
-	public void strokeRect(int x, int y, int w, int h) {
-		throw new UnsupportedOperationException();
-	}
+	public native void strokeRect(int x, int y, int w, int h);
 
-	public void strokeText(String text, int x, int y, int maxWidth) {
-		throw new UnsupportedOperationException();
-	}
+	public native void strokeText(String text, int x, int y, int maxWidth);
 
-	public void transform(double m11, double m12, double m21, double m22, double dx, double dy) {
-		throw new UnsupportedOperationException();
-	}
+	public native void transform(double m11, double m12, double m21, double m22, double dx, double dy);
 
-	public void translate(int x, int y) {
-		throw new UnsupportedOperationException();
-	}
+	public native void translate(int x, int y);
 }

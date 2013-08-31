@@ -44,19 +44,11 @@ abstract public class Media extends Element {
 	public double volume;
 
 	// addTextTrack()
-	public String canPlayType(String type) {
-		throw new UnsupportedOperationException();
-	}
+	public native String canPlayType  (String type);
 
-	public void load() {
-		throw new UnsupportedOperationException();
-	}
+	public native void load  ();
 
-	public void play() {
-		throw new UnsupportedOperationException();
-	}
+	public native void play  ();
 
-	public void pause() {
-		throw new UnsupportedOperationException();
-	}
+	public native void pause  ();
 }

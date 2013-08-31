@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -19,11 +19,7 @@ abstract public class TableSection extends Element {
 
 	public HTMLCollection<TableRow> rows;
 
-	public void deleteRow(int arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native void deleteRow  (int arg0);
 
-	public Element insertRow(int arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native Element insertRow  (int arg0);
 }

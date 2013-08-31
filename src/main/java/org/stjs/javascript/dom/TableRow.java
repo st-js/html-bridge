@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -20,11 +20,7 @@ abstract public class TableRow extends Element {
 	public int rowIndex;
 	public int sectionRowIndex;
 
-	public void deleteCell(int arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native void deleteCell  (int arg0);
 
-	public Element insertCell(int arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native Element insertCell  (int arg0);
 }

@@ -22,26 +22,26 @@ package org.stjs.javascript;
  * 
  */
 abstract public class Console {
-	public abstract void log(Object msg, Object... otherParams);
+	public native void log(Object msg, Object... otherParams);
 
-	public abstract void warn(Object msg, Object... otherParams);
+	public native void warn(Object msg, Object... otherParams);
 
-	public abstract void error(Object msg, Object... otherParams);
+	public native void error(Object msg, Object... otherParams);
 
-	public abstract void debug(Object msg, Object... otherParams);
+	public native void debug(Object msg, Object... otherParams);
 
-	public abstract void trace(Object msg, Object... otherParams);
+	public native void trace(Object msg, Object... otherParams);
 
-	public abstract void info(Object msg, Object... otherParams);
+	public native void info(Object msg, Object... otherParams);
 
-	public abstract void dir(Object msg);
+	public native void dir(Object msg);
 
-	public abstract void time(Object msg);
+	public native void time(Object msg);
 
-	public abstract void timeEnd(Object msg);
+	public native void timeEnd(Object msg);
 
-	public abstract void profile(Object msg);
+	public native void profile(Object msg);
 
-	public abstract void profileEnd(Object msg);
+	public native void profileEnd(Object msg);
 
 }

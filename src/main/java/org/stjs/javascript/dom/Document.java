@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -32,43 +32,23 @@ abstract public class Document extends Node {
 	public Element documentElement;
 	public Location location;
 
-	public HTMLList<Element> getElementsByName(String arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native HTMLList<Element> getElementsByName  (String arg0);
 
-	public Element getElementById(String id) {
-		throw new UnsupportedOperationException();
-	}
+	public native Element getElementById  (String id);
 
-	public HTMLList<Element> getElementsByTagName(String tagName) {
-		throw new UnsupportedOperationException();
-	}
+	public native HTMLList<Element> getElementsByTagName  (String tagName);
 
-	public void writeln(String arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native void writeln  (String arg0);
 
-	public void write(String arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native void write  (String arg0);
 
-	public void close() {
-		throw new UnsupportedOperationException();
-	}
+	public native void close  ();
 
-	public void open() {
-		throw new UnsupportedOperationException();
-	}
+	public native void open  ();
 
-	public Element createElement(String tagName) {
-		throw new UnsupportedOperationException();
-	}
+	public native Element createElement  (String tagName);
 
-	public Text createTextNode(String data) {
-		throw new UnsupportedOperationException();
-	}
+	public native Text createTextNode  (String data);
 
-	public Attr createAttribute(String name) {
-		throw new UnsupportedOperationException();
-	}
+	public native Attr createAttribute  (String name);
 }

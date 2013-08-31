@@ -3,32 +3,19 @@ package org.stjs.javascript.dom.geo;
 import org.stjs.javascript.functions.Callback1;
 
 abstract public class Geolocation {
-	public void getCurrentPosition(Callback1<Position> success) {
-		throw new UnsupportedOperationException();
-	}
+	public native void getCurrentPosition(Callback1<Position> success);
 
-	public void getCurrentPosition(Callback1<Position> success, Callback1<PositionError> error) {
-		throw new UnsupportedOperationException();
-	}
+	public native void getCurrentPosition(Callback1<Position> success, Callback1<PositionError> error);
 
-	public void getCurrentPosition(Callback1<Position> success, Callback1<PositionError> error, PositionOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native void getCurrentPosition(Callback1<Position> success, Callback1<PositionError> error,
+			PositionOptions options);
 
-	public WatchId watchCurrentPosition(Callback1<Position> success) {
-		throw new UnsupportedOperationException();
-	}
+	public native WatchId watchCurrentPosition(Callback1<Position> success);
 
-	public WatchId watchCurrentPosition(Callback1<Position> success, Callback1<PositionError> error) {
-		throw new UnsupportedOperationException();
-	}
+	public native WatchId watchCurrentPosition(Callback1<Position> success, Callback1<PositionError> error);
 
-	public WatchId watchCurrentPosition(Callback1<Position> success, Callback1<PositionError> error,
-			PositionOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native WatchId watchCurrentPosition(Callback1<Position> success, Callback1<PositionError> error,
+			PositionOptions options);
 
-	public void clearWatch(WatchId id) {
-		throw new UnsupportedOperationException();
-	}
+	public native void clearWatch(WatchId id);
 }

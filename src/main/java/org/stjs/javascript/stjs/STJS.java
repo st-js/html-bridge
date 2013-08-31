@@ -6,13 +6,13 @@ package org.stjs.javascript.stjs;
  * 
  * @author acraciun
  */
-public interface STJS {
+public final class STJS {
 	/**
 	 * 
 	 * @param obj
 	 * @return true if the given object is an STJS enum entry
 	 */
-	public boolean isEnum(Object obj);
+	public native boolean isEnum(Object obj);
 
 	/**
 	 * throw an exception of any type in Javascript. Java allowes and Throwable derived classes to be thrown, but
@@ -20,7 +20,7 @@ public interface STJS {
 	 * 
 	 * @param ex
 	 */
-	public Exception exception(Object ex);
+	public native Exception exception(Object ex);
 
 	/**
 	 * parse the given json String and build the object hierarchy in a typed-manner: i.e it builds the objects using
@@ -31,5 +31,5 @@ public interface STJS {
 	 * @param clazz
 	 * @return
 	 */
-	public <T> T parseJSON(String json, Class<T> clazz);
+	public native <T> T parseJSON(String json, Class<T> clazz);
 }

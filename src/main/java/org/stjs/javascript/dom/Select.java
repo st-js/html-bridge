@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -29,19 +29,11 @@ abstract public class Select extends Element {
 	public String type;
 	public String value;
 
-	public void blur() {
-		throw new UnsupportedOperationException();
-	}
+	public native void blur  ();
 
-	public void add(Element arg0, Element arg1) {
-		throw new UnsupportedOperationException();
-	}
+	public native void add  (Element arg0, Element arg1);
 
-	public void remove(int arg0) {
-		throw new UnsupportedOperationException();
-	}
+	public native void remove  (int arg0);
 
-	public void focus() {
-		throw new UnsupportedOperationException();
-	}
+	public native void focus  ();
 }

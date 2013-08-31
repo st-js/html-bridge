@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -18,24 +18,16 @@ package org.stjs.javascript.dom;
 abstract public class Node {
 	public HTMLCollection<Attr> attributes;
 
-	public void appendChild(Node node) {
-		throw new UnsupportedOperationException();
-	}
+	public native void appendChild  (Node node);
 
-	public Node cloneNode(boolean deep) {
-		throw new UnsupportedOperationException();
-	}
+	public native Node cloneNode  (boolean deep);
 
-	public short compareDocumentPosition(Node n) {
-		throw new UnsupportedOperationException();
-	}
+	public native short compareDocumentPosition  (Node n);
 
 	public String baseURI;
 	public HTMLList<Node> childNodes;
 
-	public String getFeature(String feature, String version) {
-		throw new UnsupportedOperationException();
-	}
+	public native String getFeature  (String feature, String version);
 
 	public Node firstChild;
 	public Node lastChild;
@@ -51,51 +43,29 @@ abstract public class Node {
 	public Node previousSibling;
 	public String textContent;
 
-	public String getUserData(String s) {
-		throw new UnsupportedOperationException();
-	}
+	public native String getUserData  (String s);
 
 	public boolean hasAttributes;
 	public boolean hasChildNodes;
 
-	public void insertBefore(Node n1, Node n2) {
-		throw new UnsupportedOperationException();
-	}
+	public native void insertBefore  (Node n1, Node n2);
 
-	public boolean isDefaultNamespace(String s) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isDefaultNamespace  (String s);
 
-	public boolean isEqualNode(Node n) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isEqualNode  (Node n);
 
-	public boolean isSameNode(Node n) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isSameNode  (Node n);
 
-	public boolean isSupported(String feature, String version) {
-		throw new UnsupportedOperationException();
-	}
+	public native boolean isSupported  (String feature, String version);
 
-	public String lookupNamespaceURI(String s) {
-		throw new UnsupportedOperationException();
-	}
+	public native String lookupNamespaceURI  (String s);
 
-	public String lookupPrefix(String s) {
-		throw new UnsupportedOperationException();
-	}
+	public native String lookupPrefix  (String s);
 
-	public void normalize() {
-		throw new UnsupportedOperationException();
-	}
+	public native void normalize  ();
 
-	public void removeChild(Node n) {
-		throw new UnsupportedOperationException();
-	}
+	public native void removeChild  (Node n);
 
-	public void replaceChild(Node n1, Node n2) {
-		throw new UnsupportedOperationException();
-	}
+	public native void replaceChild  (Node n1, Node n2);
 	// setUserData(String, Object, UserDataHandler)
 }

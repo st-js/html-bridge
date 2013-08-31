@@ -1,7 +1,7 @@
 /**
  *  Copyright 2011 Alexandru Craciun, Eyal Kaspi
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"){throw new UnsupportedOperationException();}
+ *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
@@ -18,27 +18,15 @@ package org.stjs.javascript.dom;
 abstract public class HTMLCollection<T extends Node> {
 	public int length;
 
-	public T namedItem(String name) {
-		throw new UnsupportedOperationException();
-	}
+	public native T namedItem  (String name);
 
-	public T $get(String name) {
-		throw new UnsupportedOperationException();
-	}
+	public native T $get  (String name);
 
-	public T $get(int index) {
-		throw new UnsupportedOperationException();
-	}
+	public native T $get  (int index);
 
-	public T item(int index) {
-		throw new UnsupportedOperationException();
-	}
+	public native T item  (int index);
 
-	public void $set(int index, T node) {
-		throw new UnsupportedOperationException();
-	}
+	public native void $set  (int index, T node);
 
-	public void $set(String index, T node) {
-		throw new UnsupportedOperationException();
-	}
+	public native void $set  (String index, T node);
 }

@@ -14,38 +14,24 @@ import org.stjs.javascript.functions.Callback3;
 @SuppressWarnings("unused")
 public class STJSAssert {
 	@Template("assert")
-	public static void assertArgEquals(Object expectedValue, Object testValue) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void assertArgEquals  (Object expectedValue, Object testValue);
 
 	@Template("assert")
-	public static void assertArgNotNull(Object testValue) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void assertArgNotNull  (Object testValue);
 
 	@Template("assert")
-	public static void assertArgTrue(boolean condition) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void assertArgTrue  (boolean condition);
 
 	@Template("assert")
-	public static void assertStateEquals(Object expectedValue, Object testValue) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void assertStateEquals  (Object expectedValue, Object testValue);
 
 	@Template("assert")
-	public static void assertStateNotNull(Object testValue) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void assertStateNotNull  (Object testValue);
 
 	@Template("assert")
-	public static void assertStateTrue(boolean condition) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void assertStateTrue  (boolean condition);
 
 	@Template("assert")
-	public static void setAssertHandler(Callback3<String, String, String> message) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void setAssertHandler  (Callback3<String, String, String> message);
 
 }
