@@ -123,35 +123,38 @@ abstract public class Element extends Node {
 	public Function1<DOMEvent, Boolean> onvolumechange;
 	public Function1<DOMEvent, Boolean> onwaiting;
 
-	public native String getAttribute  (String name);
+	public native String getAttribute(String name);
 
-	public native Attr getAttributeNode  (String name);
+	public native Attr getAttributeNode(String name);
 
 	// public getAttributeNodeNS(String, String)
 	// public getAttributeNS(String, String)
-	public native HTMLList<Element> getElementsByTagName  (String tag);
+	public native HTMLList<Element> getElementsByTagName(String tag);
 
 	// public getElementsByTagNameNS(String, String)
 	// public getSchemaTypeInfo()
 
-	public native boolean hasAttribute  (String name);
+	public native boolean hasAttribute(String name);
 
 	// public hasAttributeNS(String, String)
-	public native void removeAttribute  (String name);
+	public native void removeAttribute(String name);
 
-	public native void removeAttributeNode  (Attr att);
+	public native void removeAttributeNode(Attr att);
 
 	// public removeAttributeNS(String, String)
-	public native void setAttribute  (String name, String value);
+	public native void setAttribute(String name, String value);
 
-	public native void setAttributeNode  (Attr name);
+	public native void setAttributeNode(Attr name);
 
 	// public setAttributeNodeNS(Attr)
 	// public setAttributeNS(String, String, String)
-	public native void setIdAttribute  (String name, boolean id);
+	public native void setIdAttribute(String name, boolean id);
 
-	public native void setIdAttributeNode  (Attr attr, boolean id);
+	public native void setIdAttributeNode(Attr attr, boolean id);
 
 	// public setIdAttributeNS(String, String, boolean)
 
+	public native void blur();
+
+	public native void focus();
 }
