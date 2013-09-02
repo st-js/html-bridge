@@ -15,18 +15,24 @@
  */
 package org.stjs.javascript.dom;
 
+import org.stjs.javascript.annotation.Template;
+
 abstract public class HTMLCollection<T extends Node> {
 	public int length;
 
-	public native T namedItem  (String name);
+	public native T namedItem(String name);
 
-	public native T $get  (String name);
+	@Template("get")
+	public native T $get(String name);
 
-	public native T $get  (int index);
+	@Template("get")
+	public native T $get(int index);
 
-	public native T item  (int index);
+	public native T item(int index);
 
-	public native void $set  (int index, T node);
+	@Template("set")
+	public native void $set(int index, T node);
 
-	public native void $set  (String index, T node);
+	@Template("set")
+	public native void $set(String index, T node);
 }

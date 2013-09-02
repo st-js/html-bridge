@@ -15,10 +15,13 @@
  */
 package org.stjs.javascript.dom;
 
+import org.stjs.javascript.annotation.Template;
+
 abstract public class HTMLList<T> {
 	public int length;
 
-	public native T item  (int index);
+	public native T item(int index);
 
-	public native T $get  (int index);
+	@Template("get")
+	public native T $get(int index);
 }
