@@ -5,7 +5,7 @@
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>html</artifactId>
 	<packaging>jar</packaging>
-	<version>5.0.bv0-SNAPSHOT</version>
+	<version>5.0.bv0</version>
 	<name>Strongly-typed Javascript:Bridge to HTML/DOM</name>
 
 	<parent>
@@ -33,6 +33,6 @@
 		<connection>scm:git:https://github.com/st-js/html-bridge.git</connection>
 		<developerConnection>scm:git:https://github.com/st-js/html-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/html-bridge</url>
-	  <tag>HEAD</tag>
+	  <tag>html-5.0.bv0</tag>
   	</scm>
 </project>
