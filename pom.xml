@@ -16,7 +16,7 @@
  
 
 	<properties>
-		<st-js.version>2.0.0-SNAPSHOT</st-js.version> 
+		<st-js.version>2.0.0</st-js.version> 
 	</properties>
 
 	<dependencies>
