@@ -5,7 +5,7 @@
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>html</artifactId>
 	<packaging>jar</packaging>
-	<version>4.01.0</version>
+	<version>4.01.bv0-SNAPSHOT</version>
 	<name>Strongly-typed Javascript:Bridge to HTML/DOM</name>
 
 	<parent>
@@ -13,10 +13,10 @@
 		<artifactId>parent-pom</artifactId>
 		<version>1.0.0</version>
 	</parent>
- 
+
 
 	<properties>
-		<st-js.version>1.4.0</st-js.version> 
+		<st-js.version>1.4.0</st-js.version>
 	</properties>
 
 	<dependencies>
@@ -27,7 +27,7 @@
 		</dependency>
 	</dependencies>
 
-	
+
 
 	<scm>
 		<connection>scm:git:http://github.com/st-js/html-bridge.git</connection>
