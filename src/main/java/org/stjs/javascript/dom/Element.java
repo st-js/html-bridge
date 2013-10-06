@@ -17,9 +17,10 @@ package org.stjs.javascript.dom;
 
 import org.stjs.javascript.StyleSheet;
 import org.stjs.javascript.Window;
+import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Function1;
 
-abstract public class Element extends Node {
+abstract public class Element extends Node implements EventTarget {
 	public String className;
 	public String dir;
 	public String id;
@@ -157,4 +158,19 @@ abstract public class Element extends Node {
 	public native void blur();
 
 	public native void focus();
+
+	@Override
+	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+
+	@Override
+	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+	@Override
+	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+
+	@Override
+	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+	@Override
+	public native boolean dispatchEvent(DOMEvent event);
 }

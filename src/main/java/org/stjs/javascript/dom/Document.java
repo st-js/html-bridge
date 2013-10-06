@@ -16,8 +16,9 @@
 package org.stjs.javascript.dom;
 
 import org.stjs.javascript.Location;
+import org.stjs.javascript.functions.Callback1;
 
-abstract public class Document extends Node {
+abstract public class Document extends Node implements EventTarget {
 	public String URL;
 	public String documentURI;
 	public HTMLCollection<Anchor> anchors;
@@ -32,23 +33,38 @@ abstract public class Document extends Node {
 	public Element documentElement;
 	public Location location;
 
-	public native HTMLList<Element> getElementsByName  (String arg0);
+	public native HTMLList<Element> getElementsByName(String arg0);
 
-	public native Element getElementById  (String id);
+	public native Element getElementById(String id);
 
-	public native HTMLList<Element> getElementsByTagName  (String tagName);
+	public native HTMLList<Element> getElementsByTagName(String tagName);
 
-	public native void writeln  (String arg0);
+	public native void writeln(String arg0);
 
-	public native void write  (String arg0);
+	public native void write(String arg0);
 
-	public native void close  ();
+	public native void close();
 
-	public native void open  ();
+	public native void open();
 
-	public native Element createElement  (String tagName);
+	public native Element createElement(String tagName);
 
-	public native Text createTextNode  (String data);
+	public native Text createTextNode(String data);
 
-	public native Attr createAttribute  (String name);
+	public native Attr createAttribute(String name);
+
+	@Override
+	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+
+	@Override
+	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+	@Override
+	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+
+	@Override
+	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+	@Override
+	public native boolean dispatchEvent(DOMEvent event);
 }
