@@ -30,8 +30,8 @@
 
 
 	<scm>
-		<connection>scm:git:http://github.com/st-js/html-bridge.git</connection>
-		<developerConnection>scm:git:http://github.com/st-js/html-bridge.git</developerConnection>
+		<connection>scm:git:https://github.com/st-js/html-bridge.git</connection>
+		<developerConnection>scm:git:https://github.com/st-js/html-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/html-bridge</url>
 	  <tag>html-4.01.bv0</tag>
   	</scm>
