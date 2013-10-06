@@ -17,11 +17,12 @@ package org.stjs.javascript;
 
 import org.stjs.javascript.dom.DOMEvent;
 import org.stjs.javascript.dom.Document;
+import org.stjs.javascript.dom.EventTarget;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Function1;
 import org.w3c.dom.events.Event;
 
-public class Window {
+public class Window implements EventTarget {
 	public boolean closed;
 	public String defaultStatus;
 	public Document document;
@@ -86,4 +87,18 @@ public class Window {
 
 	public native String btoa(String text);
 
+	@Override
+	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+
+	@Override
+	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+	@Override
+	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+
+	@Override
+	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+	@Override
+	public native boolean dispatchEvent(DOMEvent event);
 }
