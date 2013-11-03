@@ -26,64 +26,56 @@ import org.stjs.javascript.functions.Function1;
  * @author acraciun
  */
 @Adapter
-public class JSStringAdapter {
+public class JSStringAdapter extends JSStringAdapterBase {
+	@Deprecated
 	@Template("adapter")
 	public native static String anchor  (String applyTo, String anchor);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String big  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String blink  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String bold  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String fixed  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String fontcolor  (String applyTo, String color);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String fontsize  (String applyTo, int size);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String italics  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String link  (String applyTo, String url);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String small  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String strike  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String sub  (String applyTo);
 
+	@Deprecated
 	@Template("adapter")
 	public native static String sup  (String applyTo);
-
-	@Template("adapter")
-	public native static Array<String> match  (String applyTo, RegExp re);
-
-	@Template("adapter")
-	public native static Array<String> split  (String applyTo, String re);
-
-	@Template("adapter")
-	public native static Array<String> split  (String applyTo, String re, int limit);
-
-	@Template("adapter")
-	public native static String replace  (String applyTo, RegExp re, String repl);
-
-	@Template("adapter")
-	public native static String replace  (String applyTo, RegExp re, Function1<String, String> replaceFunction);
-
-	@Template("adapter")
-	public native static int charCodeAt  (String applyTo, int x);
-
-	@Template("adapter")
-	public native static String fromCharCode  (Class<? extends String> applyTo, int... codes);
 }

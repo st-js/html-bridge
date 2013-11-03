@@ -18,22 +18,12 @@ package org.stjs.javascript;
 import org.stjs.javascript.annotation.GlobalScope;
 import org.stjs.javascript.annotation.Template;
 import org.stjs.javascript.functions.Callback0;
-import org.stjs.javascript.stjs.STJS;
 
 @GlobalScope
-public class Global {
-	public static Number Infinity;
-	public static Number NaN;
-
-	public static Object undefined;
-
+public class Global extends JSGlobal {
 	public static Window window;
 
 	public static Console console;
-
-	public static STJS stjs;
-
-	public static JSON JSON;
 
 	public static Storage localStorage;
 	public static Storage sessionStorage;
