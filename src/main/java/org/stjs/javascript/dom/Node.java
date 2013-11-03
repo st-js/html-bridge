@@ -45,8 +45,9 @@ abstract public class Node {
 
 	public native String getUserData  (String s);
 
-	public boolean hasAttributes;
-	public boolean hasChildNodes;
+	public native boolean hasAttributes  ();
+        
+	public native boolean hasChildNodes  ();
 
 	public native void insertBefore  (Node n1, Node n2);
 
