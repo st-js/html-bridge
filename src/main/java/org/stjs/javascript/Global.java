@@ -15,6 +15,9 @@
  */
 package org.stjs.javascript;
 
+import org.stjs.javascript.annotation.GlobalScope;
+import org.stjs.javascript.functions.Callback0;
+
 @GlobalScope
 public class Global extends JSGlobal {
 	public static Window window;
