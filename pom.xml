@@ -6,7 +6,7 @@
 	<artifactId>html</artifactId>
 	<packaging>jar</packaging>
 	<version>5.0.bv3-SNAPSHOT</version>
-	<name>Strongly-typed Javascript:Bridge to HTML/DOM</name>
+	<name>Strongly-typed Javascript: Bridge to HTML/DOM</name>
 
 	<parent>
 		<groupId>org.st-js.bridge</groupId>
