@@ -32,6 +32,7 @@ abstract public class Document extends Node implements EventTarget {
 	public String title;
 	public Element documentElement;
 	public Location location;
+	public String readyState;
 
 	public native HTMLList<Element> getElementsByName(String arg0);
 
