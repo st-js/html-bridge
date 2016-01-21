@@ -47,6 +47,9 @@ abstract public class Media extends Element {
 	// videoTracks
 	public double volume;
 	public MediaError error;
+	public Boolean webkitPreservesPitch;
+	public Boolean preservesPitch;
+	public Boolean mozPreservesPitch;
 
 	// addTextTrack()
 	public native String canPlayType  (String type);
