@@ -50,6 +50,8 @@ abstract public class Input extends Element {
 	public String type;
 	public String useMap;
 	public String value;
+	public int selectionStart;
+	public int selectionEnd;
 
 	public native void blur  ();
 
