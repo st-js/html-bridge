@@ -17,6 +17,22 @@ public abstract class CSSStyleDeclaration {
 	 */
 	public CSSStyleRule parentRule;
 
+    public String paddingLeft;
+
+    public String paddingBottom;
+
+    public String width;
+
+    public String height;
+
+    public String left;
+
+    public String top;
+
+    public String marginTop;
+
+    public String display;
+
 	/**
 	 * @param propertyName
 	 * @return the optional priority, "important".
