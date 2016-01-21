@@ -17,6 +17,7 @@ package org.stjs.javascript.dom;
 
 import org.stjs.javascript.StyleSheet;
 import org.stjs.javascript.Window;
+import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Function1;
 
@@ -124,6 +125,10 @@ abstract public class Element extends Node implements EventTarget {
 	public Function1<DOMEvent, Boolean> onvolumechange;
 	public Function1<DOMEvent, Boolean> onwaiting;
 
+	public Callback0 requestFullScreen;
+	public Callback0 mozRequestFullScreen;
+	public Callback1 webkitRequestFullScreen;
+	public Callback0 webkitEnterFullScreen;
 	public native String getAttribute(String name);
 
 	public native Attr getAttributeNode(String name);

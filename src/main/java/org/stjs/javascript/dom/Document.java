@@ -16,6 +16,7 @@
 package org.stjs.javascript.dom;
 
 import org.stjs.javascript.Location;
+import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 
 abstract public class Document extends Node implements EventTarget {
@@ -33,6 +34,10 @@ abstract public class Document extends Node implements EventTarget {
 	public Element documentElement;
 	public Location location;
 	public String readyState;
+	public boolean isFullscreen;
+	public Callback0 cancelFullscreen;
+	public Callback0 mozCancelFullScreen;
+	public Callback0 webkitCancelFullScreen;
 
 	public native HTMLList<Element> getElementsByName(String arg0);
 
