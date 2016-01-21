@@ -173,4 +173,6 @@ abstract public class Element extends Node implements EventTarget {
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
+	public native Element querySelector(String selector);
+	public native HTMLList<Element> querySelectorAll(String string);
 }
