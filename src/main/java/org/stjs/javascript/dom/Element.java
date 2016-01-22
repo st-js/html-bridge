@@ -15,7 +15,6 @@
  */
 package org.stjs.javascript.dom;
 
-import org.stjs.javascript.Array;
 import org.stjs.javascript.CSSStyleDeclaration;
 import org.stjs.javascript.StyleSheet;
 import org.stjs.javascript.Window;
@@ -134,6 +133,9 @@ abstract public class Element extends Node implements EventTarget {
 	public Callback0 mozRequestFullScreen;
 	public Callback1 webkitRequestFullScreen;
 	public Callback0 webkitEnterFullScreen;
+	public Element firstElementChild;
+	public Element lastElementChild;
+	public Element parentElement;
 
 	public native String getAttribute(String name);
 
