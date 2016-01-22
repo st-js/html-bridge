@@ -20,6 +20,13 @@
 		<st-js.version>3.3.0</st-js.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>DropboxM2 Corporate</id>
+			<url>file://${user.home}/Dropbox/m2/repository</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.st-js</groupId>
