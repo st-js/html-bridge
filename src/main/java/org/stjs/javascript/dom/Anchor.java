@@ -24,6 +24,7 @@ abstract public class Anchor extends Element {
 
 	public String target;
 	public String type;
+	public String download;
 
 	public native void blur  ();
 
