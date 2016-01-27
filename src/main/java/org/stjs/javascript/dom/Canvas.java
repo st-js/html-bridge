@@ -8,5 +8,5 @@ abstract public class Canvas extends Element {
 
 	public native CanvasRenderingContext2D getContext  (String type);
 
-	public native String toDataURL();
+	public native String toDataURL(String type);
 }
