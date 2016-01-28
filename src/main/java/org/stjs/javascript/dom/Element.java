@@ -136,6 +136,7 @@ abstract public class Element extends Node implements EventTarget {
 	public Element firstElementChild;
 	public Element lastElementChild;
 	public Element parentElement;
+	public Element previousElementSibling;
 
 	public native String getAttribute(String name);
 
