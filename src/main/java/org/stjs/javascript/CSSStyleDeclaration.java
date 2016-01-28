@@ -33,6 +33,8 @@ public abstract class CSSStyleDeclaration {
 
     public String display;
 
+	public double opacity;
+
 	/**
 	 * @param propertyName
 	 * @return the optional priority, "important".

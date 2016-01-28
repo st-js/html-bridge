@@ -196,4 +196,7 @@ abstract public class Element extends Node implements EventTarget {
 	public native void click();
 
 	public native HTMLList<Element> querySelectorAll(String string);
+
+	/** https://developer.mozilla.org/en-US/docs/Web/API/Element/closest */
+	public native Element closest(String selectors);
 }

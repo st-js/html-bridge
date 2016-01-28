@@ -19,6 +19,8 @@ import org.stjs.javascript.Location;
 import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 
+import com.vg.js.player.view.var;
+
 abstract public class Document extends Node implements EventTarget {
 	public String URL;
 	public String documentURI;
@@ -77,4 +79,6 @@ abstract public class Document extends Node implements EventTarget {
 	public native Element querySelector(String selector);
 
 	public native Element createComment(String comment);
+
+	public native HTMLList<Element> querySelectorAll(String string);
 }
