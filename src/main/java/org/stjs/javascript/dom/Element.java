@@ -189,6 +189,8 @@ abstract public class Element extends Node implements EventTarget {
 
 	public native Element querySelector(String selector);
 
+	public native HTMLCollection<Element> getElementsByClassName(String className);
+
 	public native DOMRect getBoundingClientRect();
 
 	public native void insertAdjacentHTML(String string, String string2);
