@@ -203,4 +203,6 @@ abstract public class Element extends Node implements EventTarget {
 
 	/** https://developer.mozilla.org/en-US/docs/Web/API/Element/closest */
 	public native Element closest(String selectors);
+
+	public Element nextElementSibling;
 }

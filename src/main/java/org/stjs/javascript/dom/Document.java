@@ -46,7 +46,7 @@ abstract public class Document extends Node implements EventTarget {
 
 	public native Element getElementById(String id);
 
-	public native HTMLList<Element> getElementsByTagName(String tagName);
+	public native HTMLCollection<Element> getElementsByTagName(String tagName);
 
 	public native void writeln(String arg0);
 
