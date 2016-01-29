@@ -38,7 +38,10 @@ abstract public class Document extends Node implements EventTarget {
 	public Callback0 cancelFullscreen;
 	public Callback0 mozCancelFullScreen;
 	public Callback0 webkitCancelFullScreen;
-
+	public Boolean webkitIsFullScreen;
+	public Boolean mozFullScreen;
+	public Element fullscreenElement;
+	
 	public native HTMLList<Element> getElementsByName(String arg0);
 
 	public native Element getElementById(String id);
