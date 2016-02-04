@@ -82,4 +82,6 @@ abstract public class Document extends Node implements EventTarget {
 	public native Element createComment(String comment);
 
 	public native HTMLList<Element> querySelectorAll(String string);
+
+	public native Node createDocumentFragment();
 }
