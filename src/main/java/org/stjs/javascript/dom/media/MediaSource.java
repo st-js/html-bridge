@@ -38,6 +38,8 @@ public class MediaSource implements EventTarget {
 
     public native SourceBuffer addSourceBuffer(String string);
 
+    public native void removeSourceBuffer(SourceBuffer sourceBuffer);
+
     public native void endOfStream();
 
     public native void endOfStream(String endOfStreamError);
