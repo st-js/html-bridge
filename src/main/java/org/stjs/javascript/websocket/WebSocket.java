@@ -10,13 +10,13 @@ import org.stjs.javascript.typed.ArrayBuffer;
 @STJSBridge
 /** https://developer.mozilla.org/en-US/docs/Web/API/WebSocket */
 public class WebSocket {
-    //  The connection is not yet open.
+    /** The connection is not yet open. */
     public final static int CONNECTING = 0;
-    //  The connection is open and ready to communicate.
+    /** The connection is open and ready to communicate. */
     public final static int OPEN = 1;
-    //  The connection is in the process of closing.
+    /** The connection is in the process of closing. */
     public final static int CLOSING = 2;
-    //  The connection is closed or couldn't be opened.
+    /** The connection is closed or couldn't be opened. */
     public final static int CLOSED = 3;
 
     /**
@@ -76,7 +76,7 @@ public class WebSocket {
      * An event listener to be called when a message is received from the
      * server. The listener receives a MessageEvent named "message".
      */
-    public Callback1<DOMEvent> onmessage;
+    public Callback1<MessageEvent> onmessage;
     /**
      * An event listener to be called when the WebSocket connection's readyState
      * changes to OPEN; this indicates that the connection is ready to send and
