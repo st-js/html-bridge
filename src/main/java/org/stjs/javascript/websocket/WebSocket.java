@@ -66,7 +66,7 @@ public class WebSocket {
      * An event listener to be called when the WebSocket connection's readyState
      * changes to CLOSED. The listener receives a CloseEvent named "close".
      */
-    public Callback1<DOMEvent> onclose;
+    public Callback1<CloseEvent> onclose;
     /**
      * An event listener to be called when an error occurs. This is a simple
      * event named "error".
