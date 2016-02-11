@@ -105,6 +105,8 @@ public class DataView {
      */
     public native void setUint32(int byteOffset, long value);
 
+    public native void setUint32(int byteOffset, long value, boolean littleEndian);
+
     /**
      * Stores a signed 32-bit float (float) value at the specified byte offset
      * from the start of the view.
