@@ -24,6 +24,7 @@ abstract public class Location {
 	public int port;
 	public String protocol;
 	public String search;
+    public String origin;
 
 	public native void assign(String url);
 
