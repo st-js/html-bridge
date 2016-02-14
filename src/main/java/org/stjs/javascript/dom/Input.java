@@ -60,4 +60,14 @@ abstract public class Input extends Element {
 	public native void select  ();
 
 	public native void click  ();
+	
+    /**
+     * Returns false if the element is a candidate for constraint validation,
+     * and it does not satisfy its constraints. In this case, it also fires an
+     * invalid event at the element. It returns true if the element is not a
+     * candidate for constraint validation, or if it satisfies its constraints.
+     * 
+     * @return
+     */
+    public native boolean checkValidity();
 }
