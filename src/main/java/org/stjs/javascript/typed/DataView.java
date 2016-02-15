@@ -57,6 +57,8 @@ public class DataView {
      */
     public native long getUint32(int byteOffset);
 
+    public native long getUint32(int byteOffset, boolean littleEndian);
+
     /**
      * Gets a signed 32-bit float (float) at the specified byte offset from the
      * start of the view.
