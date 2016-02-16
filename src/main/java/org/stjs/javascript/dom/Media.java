@@ -11,6 +11,7 @@ import org.stjs.javascript.dom.media.TimeRanges;
  */
 @SyntheticType
 abstract public class Media extends Element {
+	public final static int HAVE_FUTURE_DATA = 3;
 	public final static int HAVE_ENOUGH_DATA = 4;
 	// audioTracks
 	public boolean autoplay;
