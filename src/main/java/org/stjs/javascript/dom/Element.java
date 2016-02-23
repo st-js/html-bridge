@@ -15,12 +15,15 @@
  */
 package org.stjs.javascript.dom;
 
+import org.stjs.javascript.CSSStyleDeclaration;
 import org.stjs.javascript.StyleSheet;
 import org.stjs.javascript.Window;
+import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Function1;
 
 abstract public class Element extends Node implements EventTarget {
+	public static final int ALLOW_KEYBOARD_INPUT = 1;
 	public String className;
 	public String dir;
 	public String id;
@@ -42,6 +45,7 @@ abstract public class Element extends Node implements EventTarget {
 
 	// TODO :: check the support
 	public StyleSheet styleSheet;
+	public CSSStyleDeclaration style;
 
 	public int clientHeight;
 	public int clientWidth;
@@ -124,6 +128,17 @@ abstract public class Element extends Node implements EventTarget {
 	public Function1<DOMEvent, Boolean> onvolumechange;
 	public Function1<DOMEvent, Boolean> onwaiting;
 
+	public DOMTokenList classList;
+	public Callback0 requestFullScreen;
+	public Callback0 mozRequestFullScreen;
+	public Callback1 webkitRequestFullScreen;
+	public Callback0 webkitEnterFullScreen;
+	public Element firstElementChild;
+	public Element lastElementChild;
+	public Element parentElement;
+	public Element previousElementSibling;
+	public String outerHTML;
+
 	public native String getAttribute(String name);
 
 	public native Attr getAttributeNode(String name);
@@ -173,4 +188,21 @@ abstract public class Element extends Node implements EventTarget {
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
+
+	public native Element querySelector(String selector);
+
+	public native HTMLCollection<Element> getElementsByClassName(String className);
+
+	public native DOMRect getBoundingClientRect();
+
+	public native void insertAdjacentHTML(String string, String string2);
+
+	public native void click();
+
+	public native HTMLList<Element> querySelectorAll(String string);
+
+	/** https://developer.mozilla.org/en-US/docs/Web/API/Element/closest */
+	public native Element closest(String selectors);
+
+	public Element nextElementSibling;
 }

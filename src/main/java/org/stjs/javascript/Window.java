@@ -17,7 +17,9 @@ package org.stjs.javascript;
 
 import org.stjs.javascript.dom.DOMEvent;
 import org.stjs.javascript.dom.Document;
+import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.dom.EventTarget;
+import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Function1;
 import org.w3c.dom.events.Event;
@@ -101,4 +103,10 @@ public class Window implements EventTarget {
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
+
+	public native void cancelAnimationFrame(int animationRequestId);
+
+	public native int requestAnimationFrame(Callback0 callback);
+
+	public native CSSStyleDeclaration getComputedStyle(Element element, Element pseudoElt);
 }

@@ -15,11 +15,19 @@
  */
 package org.stjs.javascript;
 
+import org.stjs.javascript.dom.DOMEvent;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.functions.Callback0;
+import org.stjs.javascript.functions.Callback1;
+import org.stjs.javascript.typed.ArrayBuffer;
 
 public class XMLHttpRequest {
+	public String responseType;
+	public ArrayBuffer response;
+
+	public Callback0 onload;
 	public Callback0 onreadystatechange;
+	public Callback1<DOMEvent> onerror;
 	public int readyState;
 	public String responseText;
 	// is in fact DOM Element, but they were mixed

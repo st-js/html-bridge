@@ -21,7 +21,7 @@ public final class CanvasRenderingContext2D {
 
 	public String lineJoin;
 
-	public int lineWidth;
+	public double lineWidth;
 
 	public double miterLimit;
 
@@ -79,7 +79,7 @@ public final class CanvasRenderingContext2D {
 
 	public native void fillRect(int x, int y, int w, int h);
 
-	public native void fillText(String text, int x, int y, int maxWidth);
+	public native void fillText(String text, double x, double y, double maxWidth);
 
 	public native CanvasImageData getImageData(int sx, int sy, int sw, int sh);
 
@@ -89,11 +89,11 @@ public final class CanvasRenderingContext2D {
 
 	public native boolean isPointInPath(int x, int y);
 
-	public native void lineTo(int x, int y);
+	public native void lineTo(double x, double y);
 
 	public native CanvasTextMetrics measureText(String text);
 
-	public native void moveTo(int x, int y);
+	public native void moveTo(double x, double y);
 
 	public native void putImageData(CanvasImageData imagedata, int dx, int dy, int dirtyX, int dirtyY, int dirtyWidth,
 			int dirtyHeight);
@@ -124,5 +124,5 @@ public final class CanvasRenderingContext2D {
 
 	public native void transform(double m11, double m12, double m21, double m22, double dx, double dy);
 
-	public native void translate(int x, int y);
+	public native void translate(double x, double y);
 }

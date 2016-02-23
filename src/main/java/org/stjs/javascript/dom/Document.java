@@ -16,6 +16,7 @@
 package org.stjs.javascript.dom;
 
 import org.stjs.javascript.Location;
+import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 
 abstract public class Document extends Node implements EventTarget {
@@ -33,12 +34,18 @@ abstract public class Document extends Node implements EventTarget {
 	public Element documentElement;
 	public Location location;
 	public String readyState;
-
+	public Callback0 cancelFullscreen;
+	public Callback0 mozCancelFullScreen;
+	public Callback0 webkitCancelFullScreen;
+	public Boolean webkitIsFullScreen;
+	public Boolean mozFullScreen;
+	public Element fullscreenElement;
+	
 	public native HTMLList<Element> getElementsByName(String arg0);
 
 	public native Element getElementById(String id);
 
-	public native HTMLList<Element> getElementsByTagName(String tagName);
+	public native HTMLCollection<Element> getElementsByTagName(String tagName);
 
 	public native void writeln(String arg0);
 
@@ -68,4 +75,12 @@ abstract public class Document extends Node implements EventTarget {
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
+
+	public native Element querySelector(String selector);
+
+	public native Element createComment(String comment);
+
+	public native HTMLList<Element> querySelectorAll(String string);
+
+	public native Node createDocumentFragment();
 }

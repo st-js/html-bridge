@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>html</artifactId>
 	<packaging>jar</packaging>
-	<version>5.0.bv4-SNAPSHOT</version>
+	<version>5.0.bv6</version>
 	<name>Strongly-typed Javascript: Bridge to HTML/DOM</name>
 
 	<parent>
@@ -13,11 +14,12 @@
 		<artifactId>parent-pom</artifactId>
 		<version>1.0.1</version>
 	</parent>
- 
+
 
 	<properties>
-		<st-js.version>3.0.3</st-js.version> 
+		<st-js.version>3.3.0</st-js.version>
 	</properties>
+
 
 	<dependencies>
 		<dependency>
@@ -27,12 +29,33 @@
 		</dependency>
 	</dependencies>
 
-	
+
 
 	<scm>
 		<connection>scm:git:https://github.com/st-js/html-bridge.git</connection>
 		<developerConnection>scm:git:https://github.com/st-js/html-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/html-bridge</url>
-	  <tag>HEAD</tag>
-  	</scm>
+		<tag>HEAD</tag>
+	</scm>
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>DropboxM2</id>
+			<name>Corporate Repository</name>
+			<url>file://${user.home}/Dropbox/m2/repository</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.3</version>
+				<configuration>
+					<additionalparam>-Xdoclint:none</additionalparam>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

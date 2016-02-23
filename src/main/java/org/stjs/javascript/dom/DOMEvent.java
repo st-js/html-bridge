@@ -31,4 +31,8 @@ public class DOMEvent {
 	public String type;
 
 	public DataTransfer dataTransfer;
+
+	public native void preventDefault();
+
+	public native void stopPropagation();
 }

@@ -11,6 +11,8 @@ import org.stjs.javascript.dom.media.TimeRanges;
  */
 @SyntheticType
 abstract public class Media extends Element {
+	public final static int HAVE_FUTURE_DATA = 3;
+	public final static int HAVE_ENOUGH_DATA = 4;
 	// audioTracks
 	public boolean autoplay;
 	public TimeRanges buffered;
@@ -19,15 +21,18 @@ abstract public class Media extends Element {
 	public boolean loop;
 	public boolean muted;
 	public String poster;
+	/** use preload=auto */
+	@Deprecated
+	public boolean autobuffer;
 	public String preload;
 	public String src;
 
 	// crossOrigin
 	public String currentSrc;
-	public int currentTime;
+	public double currentTime;
 	public boolean defaultMuted;
 	public double defaultPlaybackRate;
-	public int duration;
+	public double duration;
 	public boolean ended;
 	// error
 	public String mediaGroup;
@@ -42,6 +47,10 @@ abstract public class Media extends Element {
 	// textTracks
 	// videoTracks
 	public double volume;
+	public MediaError error;
+	public Boolean webkitPreservesPitch;
+	public Boolean preservesPitch;
+	public Boolean mozPreservesPitch;
 
 	// addTextTrack()
 	public native String canPlayType  (String type);
