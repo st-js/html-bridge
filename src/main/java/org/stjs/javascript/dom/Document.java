@@ -41,7 +41,8 @@ abstract public class Document extends Node implements EventTarget {
 	public Boolean webkitIsFullScreen;
 	public Boolean mozFullScreen;
 	public Element fullscreenElement;
-	
+	public DOMImplementation implementation;
+
 	public native HTMLList<Element> getElementsByName(String arg0);
 
 	public native Element getElementById(String id);
