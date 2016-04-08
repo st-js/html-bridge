@@ -6,7 +6,12 @@ import org.stjs.javascript.annotation.STJSBridge;
 @STJSBridge
 public class ArrayBuffer {
     public long byteLength;
-    
+
+    @Native
+    public ArrayBuffer(int length) {
+        throw new RuntimeException("TODO ArrayBuffer");
+    }
+
     @Native
     public static boolean isView(Object o) {
         return false;

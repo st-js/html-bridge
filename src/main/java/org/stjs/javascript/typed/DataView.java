@@ -51,6 +51,8 @@ public class DataView {
      */
     public native int getInt32(int byteOffset);
 
+    public native int getInt32(int byteOffset, boolean littleEndian);
+
     /**
      * Gets an unsigned 32-bit integer (unsigned long) at the specified byte
      * offset from the start of the view.
