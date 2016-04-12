@@ -109,4 +109,6 @@ public class Window implements EventTarget {
 	public native int requestAnimationFrame(Callback0 callback);
 
 	public native CSSStyleDeclaration getComputedStyle(Element element, Element pseudoElt);
+
+	public native static String encodeURIComponent(String str);
 }
