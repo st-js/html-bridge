@@ -110,5 +110,5 @@ public class Window implements EventTarget {
 
 	public native CSSStyleDeclaration getComputedStyle(Element element, Element pseudoElt);
 
-	public native static String encodeURIComponent(String str);
+	public native String encodeURIComponent(String str);
 }
