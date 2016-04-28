@@ -4,7 +4,7 @@ import org.stjs.javascript.annotation.Native;
 import org.stjs.javascript.annotation.STJSBridge;
 
 @STJSBridge
-public class DataView {
+public class DataView implements ArrayBufferView {
     public ArrayBuffer buffer;
     public int byteOffset;
     public int byteLength;

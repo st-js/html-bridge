@@ -1,5 +1,6 @@
 package org.stjs.javascript.file;
 
+import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
 import org.stjs.javascript.annotation.Native;
 import org.stjs.javascript.annotation.STJSBridge;
@@ -26,6 +27,10 @@ public class Blob {
 
     @Native
     public Blob(TypedArray<? extends Number> intArray, Map<String, Object> options) {
+    }
+
+    @Native
+    public Blob(Array<?> parts, Map<String, Object> options) {
     }
 
     public boolean isClosed;
