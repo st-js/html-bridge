@@ -1,49 +1,86 @@
 package org.stjs.javascript.typed;
 
+import java.nio.ByteBuffer;
+
 import org.stjs.javascript.annotation.Native;
 import org.stjs.javascript.annotation.STJSBridge;
+import org.stjs.javascript.annotation.ServerSide;
 
 @STJSBridge
 public class DataView implements ArrayBufferView {
     public ArrayBuffer buffer;
     public int byteOffset;
     public int byteLength;
+    private ByteBuffer buf;
+
+    @ServerSide
+    public static DataView wrap(ByteBuffer buf) {
+        return new DataView(ArrayBuffer.wrap(buf));
+    }
 
     @Native
     public DataView(ArrayBuffer buffer, int byteOffset, int byteLength) {
+        this.buffer = buffer;
+        this.buf = buffer.buf;
+        this.byteOffset = byteOffset;
+        this.byteLength = byteLength;
     }
 
     @Native
     public DataView(ArrayBuffer buffer, int byteOffset) {
+        this(buffer, byteOffset, (int) (buffer.byteLength - byteOffset));
     }
 
     @Native
     public DataView(ArrayBuffer buffer) {
+        this(buffer, 0, (int) buffer.byteLength);
     }
 
     /**
      * Gets a signed 8-bit integer (byte) at the specified byte offset from the
      * start of the view.
      */
-    public native byte getInt8(int byteOffset);
+    @Native
+    public byte getInt8(int byteOffset) {
+        return buf.get(this.byteOffset + byteOffset);
+    }
 
     /**
      * Gets an unsigned 8-bit integer (unsigned byte) at the specified byte
      * offset from the start of the view.
      */
-    public native int getUint8(int byteOffset);
+    @Native
+    public int getUint8(int byteOffset) {
+        return buf.get(this.byteOffset + byteOffset) & 0xff;
+    }
 
     /**
      * Gets a signed 16-bit integer (short) at the specified byte offset from
      * the start of the view.
      */
-    public native short getInt16(int byteOffset);
+    public short getInt16(int byteOffset) {
+        return buf.getShort(this.byteOffset + byteOffset);
+    }
 
     /**
      * Gets an unsigned 16-bit integer (unsigned short) at the specified byte
      * offset from the start of the view.
      */
-    public native int getUint16(int byteOffset);
+    @Native
+    public int getUint16(int byteOffset) {
+        return buf.getShort(this.byteOffset + byteOffset) & 0xffff;
+    }
+
+    @Native
+    public int getUint16(int byteOffset, boolean littleEndian) {
+        int val = getUint16(byteOffset);
+        if (littleEndian) {
+            int hi = (val >> 8) & 0xff;
+            int lo = (val & 0xff);
+            return (lo << 8) | hi;
+        }
+        return val;
+    }
 
     /**
      * Gets a signed 32-bit integer (long) at the specified byte offset from the
