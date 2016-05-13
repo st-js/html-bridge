@@ -41,7 +41,16 @@ abstract public class History {
 	 */
 	public native void go(int positions);
 
+	/**
+	 * @deprecated because it's not standard feature only supported in Internet Explorer so far
+	 * @param url
+	 */
 	public native void go(String url);
+	
+	/**
+	 * Returns the current state object.
+	 */
+	public Object state;
 
 	/**
 	 * Pushes the given data onto the session history, with the given title, and
