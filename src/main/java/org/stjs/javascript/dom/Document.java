@@ -19,6 +19,9 @@ import org.stjs.javascript.Location;
 import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 
+import java.lang.*;
+import java.lang.Object;
+
 abstract public class Document extends Node implements EventTarget {
 	public String URL;
 	public String documentURI;
@@ -42,6 +45,8 @@ abstract public class Document extends Node implements EventTarget {
 	public Boolean mozFullScreen;
 	public Element fullscreenElement;
 	public DOMImplementation implementation;
+	public Element mozFullscreenElement;
+	public Element webkitFullscreenElement;
 
 	public native HTMLList<Element> getElementsByName(String arg0);
 
