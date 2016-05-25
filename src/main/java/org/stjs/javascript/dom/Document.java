@@ -90,4 +90,6 @@ abstract public class Document extends Node implements EventTarget {
 	public native HTMLList<Element> querySelectorAll(String string);
 
 	public native Node createDocumentFragment();
+
+	public native DOMEvent createEvent();
 }
