@@ -47,6 +47,7 @@ abstract public class Document extends Node implements EventTarget {
 	public DOMImplementation implementation;
 	public Element mozFullscreenElement;
 	public Element webkitFullscreenElement;
+	public Element activeElement;
 
 	public native HTMLList<Element> getElementsByName(String arg0);
 
