@@ -91,5 +91,5 @@ abstract public class Document extends Node implements EventTarget {
 
 	public native Node createDocumentFragment();
 
-	public native DOMEvent createEvent();
+	public native DOMEvent createEvent(String type);
 }
