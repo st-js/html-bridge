@@ -36,5 +36,6 @@ public class DOMEvent {
 
 	public native void stopPropagation();
 
-	public native void initEvent(String name);
+	public native void initEvent(String name, boolean bubbles, boolean cancelable);
+
 }
