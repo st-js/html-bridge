@@ -130,9 +130,15 @@ abstract public class Element extends Node implements EventTarget {
 
 	public DOMTokenList classList;
 	public Callback0 requestFullScreen;
+    public Callback0 requestFullscreen;
 	public Callback0 mozRequestFullScreen;
+    public Callback0 mozRequestFullscreen;
 	public Callback1 webkitRequestFullScreen;
+    public Callback1 webkitRequestFullscreen;
 	public Callback0 webkitEnterFullScreen;
+    public Callback0 webkitEnterFullscreen;
+    public Callback0 msRequestFullscreen;
+
 	public Element firstElementChild;
 	public Element lastElementChild;
 	public Element parentElement;
@@ -205,4 +211,9 @@ abstract public class Element extends Node implements EventTarget {
 	public native Element closest(String selectors);
 
 	public Element nextElementSibling;
+	
+    /** https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove 
+     * The ChildNode.remove() method removes the object from the tree it belongs to.
+     * */
+    public native void remove();
 }

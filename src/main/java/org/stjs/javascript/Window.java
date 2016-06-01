@@ -56,8 +56,12 @@ public class Window implements EventTarget {
 	public Callback1<DOMEvent> onload;
 	public Callback1<DOMEvent> onunload;
 	public Callback1<DOMEvent> onresize;
+   
+	/** https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY */
+	public int scrollY;
+    public int scrollX;
 
-	public native void blur();
+    public native void blur();
 
 	public native void close();
 

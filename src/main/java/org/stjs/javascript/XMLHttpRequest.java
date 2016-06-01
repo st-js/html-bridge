@@ -17,11 +17,12 @@ package org.stjs.javascript;
 
 import org.stjs.javascript.dom.DOMEvent;
 import org.stjs.javascript.dom.Element;
+import org.stjs.javascript.dom.EventTarget;
 import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.typed.ArrayBuffer;
 
-public class XMLHttpRequest {
+public class XMLHttpRequest implements EventTarget {
 	public String responseType;
 	public ArrayBuffer response;
 
@@ -52,4 +53,19 @@ public class XMLHttpRequest {
 	public native void send(String data);
 
 	public native void setRequestHeader(String name, Object value);
+
+    @Override
+    public native void addEventListener(String type, Callback1<DOMEvent> listener);
+
+    @Override
+    public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+    @Override
+    public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+
+    @Override
+    public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+
+    @Override
+    public native boolean dispatchEvent(DOMEvent event);
 }
