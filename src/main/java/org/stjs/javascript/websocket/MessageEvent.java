@@ -1,5 +1,6 @@
 package org.stjs.javascript.websocket;
 
+import org.stjs.javascript.Window;
 import org.stjs.javascript.annotation.STJSBridge;
 import org.stjs.javascript.dom.DOMEvent;
 
@@ -16,9 +17,9 @@ import org.stjs.javascript.dom.DOMEvent;
  */
 @STJSBridge
 public class MessageEvent extends DOMEvent {
-    public String data;
+    public Object data;
     public String origin;
     public Object ports;
-    public String source;
+    public Window source;
 
 }

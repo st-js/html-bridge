@@ -78,16 +78,16 @@ abstract public class Document extends Node implements EventTarget {
 	public native Attr createAttribute(String name);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);

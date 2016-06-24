@@ -94,16 +94,16 @@ public class Window implements EventTarget {
 	public native String btoa(String text);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
@@ -115,4 +115,12 @@ public class Window implements EventTarget {
 	public native CSSStyleDeclaration getComputedStyle(Element element, Element pseudoElt);
 
 	public native String encodeURIComponent(String str);
+
+    /**
+     * https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+     * 
+     * @param data
+     * @param origin
+     */
+    public native void postMessage(Object data, String origin);
 }

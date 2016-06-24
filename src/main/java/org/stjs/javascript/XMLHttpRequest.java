@@ -55,16 +55,16 @@ public class XMLHttpRequest implements EventTarget {
 	public native void setRequestHeader(String name, Object value);
 
     @Override
-    public native void addEventListener(String type, Callback1<DOMEvent> listener);
+    public native void addEventListener(String type, Callback1<? extends DOMEvent> listener);
 
     @Override
-    public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+    public native void addEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
     @Override
-    public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+    public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener);
 
     @Override
-    public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+    public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
     @Override
     public native boolean dispatchEvent(DOMEvent event);
