@@ -23,11 +23,6 @@ public class ArrayBuffer {
     }
 
     @Native
-    public ArrayBuffer() {
-        this(0);
-    }
-
-    @Native
     public static boolean isView(Object o) {
         return o instanceof ArrayBufferView;
     }
