@@ -15,6 +15,8 @@
  */
 package org.stjs.javascript.dom;
 
+import org.stjs.javascript.Array;
+
 abstract public class Input extends Element {
 	public String accept;
 	public String accessKey;
@@ -52,6 +54,7 @@ abstract public class Input extends Element {
 	public String value;
 	public int selectionStart;
 	public int selectionEnd;
+	public Array<File> files;
 
 	public native void blur  ();
 
