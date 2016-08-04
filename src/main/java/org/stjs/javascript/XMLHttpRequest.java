@@ -18,6 +18,7 @@ package org.stjs.javascript;
 import org.stjs.javascript.dom.DOMEvent;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.dom.EventTarget;
+import org.stjs.javascript.dom.FormData;
 import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.typed.ArrayBuffer;
@@ -51,6 +52,7 @@ public class XMLHttpRequest implements EventTarget {
 	public native void send();
 
 	public native void send(String data);
+	public native void send(FormData data);
 
 	public native void setRequestHeader(String name, Object value);
 
