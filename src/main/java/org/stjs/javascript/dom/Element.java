@@ -15,6 +15,7 @@
  */
 package org.stjs.javascript.dom;
 
+import org.stjs.javascript.Array;
 import org.stjs.javascript.CSSStyleDeclaration;
 import org.stjs.javascript.StyleSheet;
 import org.stjs.javascript.Window;
@@ -31,6 +32,7 @@ abstract public class Element extends Node implements EventTarget {
 	public String title;
 	public String tagName;
 	public String innerHTML;
+	public Array<File> files;
 
 	// TODO :: check the support
 	// @BrowserCompatibility({ @Compatibility(browser = org.stjs.javascript.annotation.Compatibility.Browser.MSIE, from
