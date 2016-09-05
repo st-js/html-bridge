@@ -20,13 +20,6 @@
 		<st-js.version>3.3.0</st-js.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>DropboxM2 Corporate</id>
-			<url>file://${user.home}/Dropbox/m2/repository</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.st-js</groupId>
@@ -43,15 +36,7 @@
 		<url>scm:git:https://github.com/st-js/html-bridge</url>
 		<tag>HEAD</tag>
 	</scm>
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>DropboxM2</id>
-			<name>Corporate Repository</name>
-			<url>file://${user.home}/Dropbox/m2/repository</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
