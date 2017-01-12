@@ -9,7 +9,7 @@ import org.stjs.javascript.functions.Function3;
 import org.stjs.javascript.functions.Function4;
 
 @STJSBridge
-public abstract class TypedArray<T extends Number> {
+public abstract class TypedArray<T extends Number> implements ArrayBufferView {
     public ArrayBuffer buffer;
     public int byteLength;
     public int byteOffset;

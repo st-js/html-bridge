@@ -43,6 +43,7 @@ abstract public class Node {
 	public Node previousSibling;
 	public String textContent;
 	public HTMLCollection<Element> children;
+    public String innerText;
 
 	public native String getUserData  (String s);
 

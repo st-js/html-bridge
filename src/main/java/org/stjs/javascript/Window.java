@@ -56,8 +56,12 @@ public class Window implements EventTarget {
 	public Callback1<DOMEvent> onload;
 	public Callback1<DOMEvent> onunload;
 	public Callback1<DOMEvent> onresize;
+   
+	/** https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY */
+	public int scrollY;
+    public int scrollX;
 
-	public native void blur();
+    public native void blur();
 
 	public native void close();
 
@@ -90,16 +94,16 @@ public class Window implements EventTarget {
 	public native String btoa(String text);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
@@ -109,4 +113,14 @@ public class Window implements EventTarget {
 	public native int requestAnimationFrame(Callback0 callback);
 
 	public native CSSStyleDeclaration getComputedStyle(Element element, Element pseudoElt);
+
+	public native String encodeURIComponent(String str);
+
+    /**
+     * https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+     * 
+     * @param data
+     * @param origin
+     */
+    public native void postMessage(Object data, String origin);
 }

@@ -19,6 +19,9 @@ import org.stjs.javascript.Location;
 import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 
+import java.lang.*;
+import java.lang.Object;
+
 abstract public class Document extends Node implements EventTarget {
 	public String URL;
 	public String documentURI;
@@ -34,18 +37,33 @@ abstract public class Document extends Node implements EventTarget {
 	public Element documentElement;
 	public Location location;
 	public String readyState;
+	public boolean isFullscreen;
+	
 	public Callback0 cancelFullscreen;
 	public Callback0 mozCancelFullScreen;
 	public Callback0 webkitCancelFullScreen;
+    public Callback0 webkitExitFullscreen;
+    public Callback0 exitFullscreen;
+    public Callback0 msExitFullscreen;
+	
 	public Boolean webkitIsFullScreen;
 	public Boolean mozFullScreen;
 	public Element fullscreenElement;
+	public Element msFullscreenElement;
+	public Element webkitFullscreenElement;
+	public Element mozFullScreenElement;
 	
+	public DOMImplementation implementation;
+	public Element mozFullscreenElement;
+	public Element activeElement;
+
 	public native HTMLList<Element> getElementsByName(String arg0);
 
 	public native Element getElementById(String id);
 
 	public native HTMLCollection<Element> getElementsByTagName(String tagName);
+
+	public native HTMLList<Element> getElementsByClassName(String arg0);
 
 	public native void writeln(String arg0);
 
@@ -62,16 +80,16 @@ abstract public class Document extends Node implements EventTarget {
 	public native Attr createAttribute(String name);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
@@ -83,4 +101,6 @@ abstract public class Document extends Node implements EventTarget {
 	public native HTMLList<Element> querySelectorAll(String string);
 
 	public native Node createDocumentFragment();
+
+	public native DOMEvent createEvent(String type);
 }

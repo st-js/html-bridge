@@ -15,6 +15,7 @@
  */
 package org.stjs.javascript.dom;
 
+import org.stjs.javascript.Array;
 import org.stjs.javascript.CSSStyleDeclaration;
 import org.stjs.javascript.StyleSheet;
 import org.stjs.javascript.Window;
@@ -130,9 +131,15 @@ abstract public class Element extends Node implements EventTarget {
 
 	public DOMTokenList classList;
 	public Callback0 requestFullScreen;
+    public Callback0 requestFullscreen;
 	public Callback0 mozRequestFullScreen;
+    public Callback0 mozRequestFullscreen;
 	public Callback1 webkitRequestFullScreen;
+    public Callback1 webkitRequestFullscreen;
 	public Callback0 webkitEnterFullScreen;
+    public Callback0 webkitEnterFullscreen;
+    public Callback0 msRequestFullscreen;
+
 	public Element firstElementChild;
 	public Element lastElementChild;
 	public Element parentElement;
@@ -175,16 +182,16 @@ abstract public class Element extends Node implements EventTarget {
 	public native void focus();
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void addEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void addEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener);
 
 	@Override
-	public native void removeEventListener(String type, Callback1<DOMEvent> listener, boolean useCapture);
+	public native void removeEventListener(String type, Callback1<? extends DOMEvent> listener, boolean useCapture);
 
 	@Override
 	public native boolean dispatchEvent(DOMEvent event);
@@ -205,4 +212,9 @@ abstract public class Element extends Node implements EventTarget {
 	public native Element closest(String selectors);
 
 	public Element nextElementSibling;
+	
+    /** https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove 
+     * The ChildNode.remove() method removes the object from the tree it belongs to.
+     * */
+    public native void remove();
 }

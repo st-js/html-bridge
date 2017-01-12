@@ -17,9 +17,9 @@ package org.stjs.javascript;
 
 /**
  * This is the bridge to the browser console object
- * 
+ *
  * @author acraciun
- * 
+ *
  */
 abstract public class Console {
 	public native void log(Object msg, Object... otherParams);
@@ -44,4 +44,7 @@ abstract public class Console {
 
 	public native void profileEnd(Object msg);
 
+    public native void groupCollapsed(String s);
+
+    public native void groupEnd();
 }

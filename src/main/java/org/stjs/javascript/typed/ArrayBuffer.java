@@ -1,18 +1,45 @@
 package org.stjs.javascript.typed;
 
+import java.nio.ByteBuffer;
+
 import org.stjs.javascript.annotation.Native;
 import org.stjs.javascript.annotation.STJSBridge;
+import org.stjs.javascript.annotation.ServerSide;
 
 @STJSBridge
 public class ArrayBuffer {
     public long byteLength;
-    
-    @Native
-    public static boolean isView(Object o) {
-        return false;
+    ByteBuffer buf;
+
+    @ServerSide
+    private ArrayBuffer(ByteBuffer buf) {
+        this.buf = buf;
+        this.byteLength = buf.remaining();
     }
 
-    public native ArrayBuffer slice(int begin);
+    @Native
+    public ArrayBuffer(int length) {
+        this(ByteBuffer.allocate(length));
+    }
 
-    public native ArrayBuffer slice(int begin, int end);
+    @Native
+    public static boolean isView(Object o) {
+        return o instanceof ArrayBufferView;
+    }
+
+    @Native
+    public ArrayBuffer slice(int begin) {
+        throw new RuntimeException("TODO ArrayBuffer.slice begin");
+    }
+
+    @Native
+    public ArrayBuffer slice(int begin, int end) {
+        throw new RuntimeException("TODO ArrayBuffer.slice begin end");
+    }
+
+    @ServerSide
+    public static ArrayBuffer wrap(ByteBuffer buf) {
+        return new ArrayBuffer(buf.slice());
+    }
+
 }

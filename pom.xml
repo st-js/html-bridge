@@ -19,7 +19,6 @@
 		<st-js.version>3.3.0</st-js.version>
 	</properties>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>org.st-js</groupId>
@@ -36,7 +35,6 @@
 		<url>scm:git:https://github.com/st-js/html-bridge</url>
 		<tag>HEAD</tag>
 	</scm>
-	
 	<build>
 		<plugins>
 			<plugin>

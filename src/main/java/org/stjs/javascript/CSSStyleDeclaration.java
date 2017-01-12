@@ -35,6 +35,12 @@ public abstract class CSSStyleDeclaration {
 
 	public double opacity;
 
+    public String paddingTop;
+
+    public String transform;
+
+    public String position;
+
 	/**
 	 * @param propertyName
 	 * @return the optional priority, "important".
